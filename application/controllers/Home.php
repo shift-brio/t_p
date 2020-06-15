@@ -13,7 +13,7 @@ class Home extends CI_Controller {
 	public function index(){
 		if (isset($_SESSION['user'])) {
 			$data['title'] = "TalkPoint";
-			$data['user'] = $_SESSION['user']->username;
+			$data['user']  = $_SESSION['user']->username;
 		}else{
 			$data['title'] = "Welcome to TalkPoint";
 		}
@@ -87,7 +87,7 @@ class Home extends CI_Controller {
         }
       }
       if ($_POST['upload_type'] == "link") {
-      	$uploaded = $_POST['link'];
+        $uploaded = $_POST['link'];
         $data = [
             'link' => $_POST['link'],
             'type' => 'yt',

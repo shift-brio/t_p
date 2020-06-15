@@ -4,7 +4,7 @@
 			<div class="side-tag">Trending now</div>
 			<div class="side-inner">
 				<?php 
-							$ors = common::user_ors();
+						 $ors = common::user_ors();
 						 if (!$this->agent->mobile()) {
 				 	    $type = "trends";				 	    
 						  $trends = common::returnHot($type, true);
@@ -48,7 +48,7 @@
 			<div class="side-tag red-text">Most Popular</div>
 			<div class="side-inner">	
 				<?php 
-					  if (!$this->agent->mobile()) {
+					if (!$this->agent->mobile()) {
 	  		    	$type = "popular";
 						  $trends = common::returnHot($type, true);
 						  if ($trends) {

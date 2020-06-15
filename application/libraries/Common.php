@@ -472,12 +472,14 @@ class Common
 				if ($col == 'videos') {
 					$ps = [];
 					
-					foreach ($posts as $post) {
-						$attachment = common::getAttched($post['attached']);
-						if ($attachment && $attachment['type'] == 'yt') {
-							array_push($ps, $post);
-						}
-					}
+					if ($posts) {
+                  foreach ($posts as $post) {
+                     $attachment = common::getAttched($post['attached']);
+                     if ($attachment && $attachment['type'] == 'yt') {
+                        array_push($ps, $post);
+                     }
+                  }
+               }
 					$posts = $ps;
 				}
 
@@ -692,7 +694,8 @@ class Common
 			if ($article) {
 				$data = [
 					'usr_id' => $_SESSION['user']->id,
-					'post_identifier' => $article[0]['identifier']
+					'post_identifier' => $article[0]['identifier'],
+               'added_at' => time()
 				];
 				$ch_like = $CI->commonDatabase->get_data("tp_likes",1,false,'post_identifier',$article[0]['identifier'],'usr_id',$_SESSION['user']->id);
 				if ($ch_like) {
@@ -1199,17 +1202,17 @@ class Common
   static function sendCode($email = false,$code = false){
   	$CI  = &get_instance();
   	if ($email && $code) {
-	  	$d = [
-	  		'email' => $email,
-	  		'code' => $code
-	  	];  								
+   	  	$d = [
+   	  		'email' => $email,
+   	  		'code' => $code
+   	  	];  								
 			$message = $CI->load->view("pass_email",$d,true);
 			$return_t = "Recover Password Here";
 			$return   = "recover?u=".$email;
 			$head     = "Talkpoint Account Password Recovery";			
 			/*=========================================================*/		  
 		  common::sendMail($head,$message,$email,$return,$return_t,true);
-		  common::log('recovery',$email,'req_request');
+		  common::log('recovery', $email,'req_request');
 		  return true;		  		
   	}else{
   		return false;
@@ -1355,16 +1358,18 @@ class Common
 				 	 array_push($sel, $country['country']);
 				 }
  			 }			 
-			 foreach ($countries as $country) {			 	
-			 	 if (!in_array($country['id'],$sel)) {
-			 	  	$data = [
-              'country' => $country['id'],
-              'usr_id' => $_SESSION['user']->id,
-              'state' => 1
-	          ];
-	          $CI->commonDatabase->add("tp_user_countries",$data); 
-			 	 }
-			 }
+			 if ($countries) {
+             foreach ($countries as $country) {          
+                if (!in_array($country['id'],$sel)) {
+                  $data = [
+                    'country' => $country['id'],
+                    'usr_id' => $_SESSION['user']->id,
+                    'state' => 1
+                  ];
+                $CI->commonDatabase->add("tp_user_countries",$data); 
+                }
+             }
+          }
 		}
 	}
 	static function isEditor(){

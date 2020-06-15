@@ -15,12 +15,12 @@
 <?php $this->load->view("components/image_viewer"); ?>
 <?php $this->load->view("components/hot_items"); ?>
 <?php $this->load->view("components/media_player"); ?>
-<?php $this->load->view("components/hot_items"); ?>
+<?php //$this->load->view("components/hot_items"); ?>
 <?php $this->load->view("components/projector"); ?>
 <?php isset($_SESSION['user']) ? $this->load->view("components/new_post") :""; ?>
 <?php $this->load->view("components/utils"); ?>
 <!-- rate us -->
-<?php $this->load->view("components/rater"); ?>
+<?php //$this->load->view("components/rater"); ?>
 <!-- base article window -->
 <?php $this->load->view("components/article"); ?>
 <!-- base nav -->
@@ -29,9 +29,9 @@
 <div class="talk-point">
 	<?php	
 		if (isset($data) && isset($loaded)) {		    		
-			//$this->load->view($loaded,$x['data'] = $d); 
+			$this->load->view($loaded,$x['data'] = $d); 
 		}else{
-			//$this->load->view("components/home_main");
+			$this->load->view("components/home_main");
 		}
 	?>
 </div>

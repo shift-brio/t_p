@@ -94,12 +94,12 @@ class Editor extends CI_Controller {
   }
   public function getNotifs(){
   	if (common::isEditor() && isset($_POST['item'])) {
-  		 $r['status'] = true;
-	     $r['m'] = common::getNotifs($_POST['item']);	;
+  		$r['status'] = true;
+	   $r['m'] = common::getNotifs($_POST['item']);	;
   	}else{
-			$r['status'] = false;
-	    $r['m'] = "Invalid access";
-	  }
+		$r['status'] = false;
+	   $r['m'] = "Invalid access";
+	}
   	common::emitData($r);
   } 
 }
