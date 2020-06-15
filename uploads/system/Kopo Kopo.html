@@ -1,0 +1,3326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0033)https://app.kopokopo.com/push_api -->
+<html lang="en" xmlns="http://www.w3.org/1999/html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!-- Make IE8 behave like IE7, necessary for charts -->
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<script type="text/javascript" src="./Kopo Kopo_files/1e6502cb0d"></script><script src="./Kopo Kopo_files/nr-1071.min.js"></script><script async="" src="./Kopo Kopo_files/analytics.js"></script><script async="" src="./Kopo Kopo_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1e6502cb0d","applicationID":"2881883","transactionName":"dFkKRUEJDw9XFkxCF1ZCDVIcFhYQWjsCQQo=","queueTime":0,"applicationTime":46,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+
+  <link rel="shortcut icon" href="https://app.kopokopo.com/images/favicon.png">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://app.kopokopo.com/assets/favicon-490370a79a771a1981918741d6778d3409e65f72febefdafee306a857d5a83e5.png">
+
+  <title>Kopo Kopo</title>
+  <link rel="stylesheet" media="screen" href="./Kopo Kopo_files/application-54bc7e13593192a327d83b08ba4b7a54a69fd50bd9e32ec79d44f0f419670bc6.css">
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="IQoQhKEhzDBODvPU/ebvZM+tUR9CwoKZdj4FKvqW8qgO1ASK+wjSFWP7Zt85T3dhfKKT13GL/cYc5fH07sbVGw==">
+
+  <!-- IE specific CSS stylesheet -->
+  <!--[if IE]>
+    <link rel="stylesheet" media="screen" href="/assets/ie-e0e49769863354ff386e1edced936dee60e642b6d06605dca124c6ab34e23cda.css" />
+    <![endif]-->
+
+  <script src="./Kopo Kopo_files/application-7242c07337b4d31297e355082d10ea0fde9c2c43e15a57458cf1d513841185e5.js"></script>
+
+      <!-- Start Visual Website Optimizer Asynchronous Code -->
+      <script type="text/javascript" async="" src="./Kopo Kopo_files/webengage-min-v-4.0.js"></script><script id="_webengage_script_tag" type="text/javascript">
+    var _weq = _weq || {};
+    _weq['webengage.licenseCode'] = '14507c326';
+    _weq['webengage.widgetVersion'] = "4.0";
+
+    (function(d){
+        var _we = d.createElement('script');
+        _we.type = 'text/javascript';
+        _we.async = true;
+        _we.src = (d.location.protocol == 'https:' ? "https://ssl.widgets.webengage.com" : "http://cdn.widgets.webengage.com") + "/js/widget/webengage-min-v-4.0.js";
+        var _sNode = d.getElementById('_webengage_script_tag');
+        _sNode.parentNode.insertBefore(_we, _sNode);
+    })(document);
+</script>
+      <script type="text/javascript">
+          var _vwo_code=(function(){
+              var account_id=33652,
+                      settings_tolerance=2000,
+                      library_tolerance=2500,
+                      use_existing_jquery=false,
+// DO NOT EDIT BELOW THIS LINE
+                      f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+      </script><script src="./Kopo Kopo_files/j.php" type="text/javascript"></script>
+      <!-- End Visual Website Optimizer Asynchronous Code -->
+
+  
+
+</head>
+<body id="body">
+<div class="TopHeader">
+  <div class="TopHeader_Container">
+
+
+      <span class="Welcome"> Welcome <a href="https://app.kopokopo.com/users/21119/edit">Kelvin Elisha</a> </span>
+      <ul class="TopLinks">
+        <li class="menu">  <!--<li >-->
+<ul class="sf-menu">
+
+  <li>
+    <a href="https://app.kopokopo.com/account_settings">Menu</a>
+    <ul>
+      <li><a href="https://app.kopokopo.com/account_settings">Account settings</a></li>
+      <li><a href="https://app.kopokopo.com/companies/19750/account_configuration/edit">API settings</a></li>
+      <li><a href="https://app.kopokopo.com/users/21119/edit">Profile</a></li>
+      <li><a href="https://app.kopokopo.com/audits">Audit logs</a></li>
+      <li><a href="https://app.kopokopo.com/direct_deposits">Direct deposits</a></li>
+      <li><a href="https://app.kopokopo.com/financial_statements">Account statement</a></li>
+        <li><a href="https://app.kopokopo.com/messages">SMS logs</a></li>
+        <li><a href="https://app.kopokopo.com/sms_bundles">SMS bundles</a></li>
+      <!-- <li><a href="/referral">Referrals</a></li> -->
+
+      <!--<li></li>-->
+    </ul>
+  </li>
+</ul>
+<!--</li>-->
+
+ <b class="caret MenuArrow"></b> </li>
+        <li><a href="https://app.kopokopo.com/help">Help</a></li>
+        |
+        <li><a rel="nofollow" data-method="delete" href="https://app.kopokopo.com/users/sign_out">Sign out</a></li>
+      </ul>
+  </div>
+</div>
+
+<!--End TopHeader-->
+
+<div id="HeaderContent_area">
+  <img class="Logo" src="./Kopo Kopo_files/Logo-9828bab4f29e90844a799a891c6c089e431192143793d34c17839aa704f98aa7.png" alt="Logo">
+  <!-- Navigation -->
+      <ul class="MainMenu">
+    <li><a class="LeftTab" id="Dashboard_tab" href="https://app.kopokopo.com/">Dashboard</a></li>
+    <li><a class="NormalTab" data-step="4" data-intro="See your transaction details here, all in one place" data-position="right" id="Transactions_tab" href="https://app.kopokopo.com/external_financial_events/transactions">Transactions</a></li>
+    <li><a class="NormalTab" data-step="5" data-intro="Pay allows you to make bulk payments to external entities" data-position="right" id="Pay_tab" href="https://app.kopokopo.com/pay/payments">Pay</a></li>
+    <li><a class="NormalTab" data-step="2" data-intro="You can also transfer funds and view your past transfer details here." data-position="right" id="Transfers_tab" href="https://app.kopokopo.com/transfer_batches">Transfers</a></li>
+      <li><a class="NormalTab" data-step="3" data-intro="Send marketing and promotional messages to your customers from here." data-position="right" id="SMSCampaigns_tab" href="https://app.kopokopo.com/campaigns">SMS Campaigns</a></li>
+      <li><a class="RightTab" id="CashAdvance_tab" href="https://app.kopokopo.com/cash_advances">Cash Advance</a></li>
+  </ul>
+
+
+  <div id="HeaderSeparator"></div>
+
+</div>
+
+<div class="content">
+
+  
+<h1>Kopo Kopo API</h1>
+
+
+<!-- Accordion links start here // LeftNav_api -->
+
+<div class="ApiContent clearfix">
+  <div class="LeftNav_api">
+    <h4>Push API</h4>
+
+    <div class="accordion" id="accordion2">
+      <div class="accordion-group LeftGroup">
+        <div class="accordion-heading">
+          <a class="accordion-toggle highlighted" data-toggle="collapse" data-parent="#accordion2" href="https://app.kopokopo.com/push_api#collapseOne">
+            HTTP(S) POST </a>
+        </div>
+
+        <div id="collapseOne" class="accordion-body collapse in">
+          <div class="accordion-inner">
+            <ul class="LeftNav_accordion">
+              <li><a href="https://app.kopokopo.com/push_api#1">Authentication</a></li>
+              <li><a href="https://app.kopokopo.com/push_api#2">Request</a></li>
+              <li><a href="https://app.kopokopo.com/push_api#3">Response</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="accordion-group">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://app.kopokopo.com/push_api#collapseTwo">XML over HTTP(S)</a>
+        </div>
+        <div id="collapseTwo" class="accordion-body collapse">
+          <div class="accordion-inner">
+            <ul class="LeftNav_accordion">
+              <li><a href="https://app.kopokopo.com/push_api#1">Authentication</a></li>
+              <li><a href="https://app.kopokopo.com/push_api#2">Request</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-group">
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://app.kopokopo.com/push_api#collapseThree"> FTP</a>
+        </div>
+        <div id="collapseThree" class="accordion-body collapse">
+          <div class="accordion-inner">
+            <ul class="LeftNav_accordion">
+              <li><a href="https://app.kopokopo.com/push_api#1">Authentication</a></li>
+              <li><a href="https://app.kopokopo.com/push_api#2">Request</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- End LeftNav_api -->
+  <div id="http_doc">
+    
+<div class="RightContainer_api">
+  <div class="RightContainer_apiHeader">
+    <h2 class="FloatLeft">HTTP(S) POST </h2>
+
+    <div class="FloatRight btn-group RightContainer_apiHeader_button">
+      <button class="btn DropDown_apiButton ">Version 3.0</button>
+      <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu   DropDown_SubMenu">
+        <li><a href="https://app.kopokopo.com/push_api#">Version 3.0</a></li>
+        <li><a href="https://app.kopokopo.com/push_api#">Version 2.0</a></li>
+        <li><a href="https://app.kopokopo.com/push_api#">Version 1.0</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="httpv3">
+    <div class="RightContainer_apiContent">
+
+  <h3>Release Notes</h3>
+  <p>
+    </p><ul>
+      <li>Release Date: 2015-11-29</li>
+      <li>Transaction parameters are now contained in the body of the POST as a JSON object as opposed to POST parameters</li>
+      <li>Basic Auth credentials have been removed from the parameters</li>
+      <li>The HMAC signature is now NOT generated using URL encoded key-value pairs. Use the key-value pairs without encoding them</li>
+    </ul>
+  <p></p>
+  <h3>Overview</h3>
+  <p>
+    The K2 HTTP(S) POST Notification API is designed to help developers integrate third-party applications with the
+    Kopo Kopo System (K2). This guide provides the technical information about integrating and configuring a system
+    with K2 using a RESTful HTTP(S) POST as the method of notification for Mobile Money transaction information.
+    Enterprises can leverage the API to allow real-time acquisition of mobile money transactions processed via the
+    K2
+    System. This document describes the HTTP POST parameters and the format of the expected response.
+  </p>
+
+
+  <h3>Synchronous or Near Real-Time Transactions</h3>
+
+  <p>Enterprises that want to receive their mobile money transaction details as they are processed will utilize the
+    XML over HTTP(S) bridge or the HTTP(S) POST Notification API. This document details the HTTP(S) POST Notification
+    API option. The HTTP POST Notification API requires that the Enterprise system in question (Back Office MIS) expose
+    a URL that HTTP or HTTPS (preferable) POST requests can be sent to.
+  </p>
+
+  <a name="1"></a>
+  <h4>1. Authentication</h4>
+  <br>
+
+  <h5>Basic Authentication</h5>
+
+  <p>Authentication currently supported is “Basic” authentication. If authentication is required, the user name and
+    password will have to be provided to the K2 application. If a different authentication method such as an API
+    key/token is desired, one should be provided.
+  </p>
+  <p>Requirements: "Basic" authentication credentials (if in use)</p>
+
+  <h5>HMAC:  Keyed-Hashing for Message Authentication</h5>
+  <p>
+    To improve the security of authentication, a keyed-hash message authentication code (HMAC) is used to calculate a
+    Message Authentication Code (MAC) that is sent over as one of the parameters (signature) and can be used to verify
+    that the request is coming from Kopo Kopo. The cryptographic hash function SHA-1 is used to calculate the
+    HMAC (HMAC-SHA1).
+  </p>
+  <p>
+    The 'secret key' (symmetric_key) that is used in hashing is the 'Api Key' that is located in the 'Account Settings'
+    page of your account. Periodically re-generating the 'Api Key' is advised as a fundamental security practice.
+  </p>
+  <p>
+    To generate the signature (MAC), the base string that is used is the post parameters (key – value pair) sorted in
+    ascending order and separated by the '&amp;' symbol. (NB: Do NOT URL encode the key value pairs.). The HMAC is generated using this string, the api key
+    and the SHA-1 algorithm. The result is then Base64 encoded to form the signature that will be passed as a security parameter.
+  </p>
+  <p>Example (pseudo code):</p>
+  <p>
+    Given b=param1, a=param2, c=param3<br>
+    The base string = "a=param2&amp;b=param1&amp;c=param3"<br>
+    symmetric_key = Your API key from your Kopo Kopo account<br>
+    signature = Base64.encode(HMAC.digest(base_string, symmetric_key, SHA1 algorithm))
+  </p>
+  <p>
+    The signature generated is then passed as one of the parameters in the JSON body. To verify authenticity of the request,
+    generate the signature using the the same operation above. The two signatures should match.
+  </p>
+  <a name="2"></a>
+  <h4>2. Request</h4>
+
+  <p>The POST request will be sent to a URL provided by the enterprise. The following POST parameters that will be
+    passed will be as follows</p>
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Parameter</th>
+      <th scope="col">Remarks</th>
+      <th scope="col">Example</th>
+    </tr>
+    <tr>
+      <td>service_name</td>
+      <td>The Mobile Money Provider</td>
+      <td>M-PESA</td>
+    </tr>
+    <tr>
+      <td>business_number</td>
+      <td>The Paybill number or Till number being paid to</td>
+      <td>888555</td>
+    </tr>
+    <tr>
+      <td>transaction_reference</td>
+      <td>The reference number as assigned to the transaction by the mobile money provider</td>
+      <td>DE45GK45</td>
+    </tr>
+    <tr>
+      <td>internal_transaction_id</td>
+      <td>The internal ID of the transaction within Kopo Kopo.</td>
+      <td>3222</td>
+    </tr>
+    <tr>
+      <td>transaction_timestamp</td>
+      <td>The time stamp of the transaction in ISO 8601 format. </td>
+      <td>2013-03-18T13:57:00Z</td>
+    </tr>
+    <tr>
+      <td>transaction_type</td>
+      <td>The type of the transaction eg. Paybill, Buygoods etc,</td>
+      <td>Paybill</td>
+    </tr>
+    <tr>
+      <td>account_number</td>
+      <td>The account number as entered by the subscriber. (optional – only for Paybill payments)</td>
+      <td>445534</td>
+    </tr>
+    <tr>
+      <td>sender_phone</td>
+      <td>The subscriber's phone number  (subscriber making the payment) in E.164 format</td>
+      <td>+254903119111</td>
+    </tr>
+    <tr>
+      <td>first_name</td>
+      <td>The first name of the subscriber</td>
+      <td>John</td>
+    </tr>
+    <tr>
+      <td>middle_name</td>
+      <td>The middle name of the subscriber</td>
+      <td>K.</td>
+    </tr>
+    <tr>
+      <td>last_name</td>
+      <td>The last name of the subscriber</td>
+      <td>Doe</td>
+    </tr>
+    <tr>
+      <td>amount</td>
+      <td>The transaction amount</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>currency</td>
+      <td>Currency in use</td>
+      <td>KES</td>
+    </tr>
+    <tr>
+      <td>signature</td>
+      <td>Keyed hash value generated from the parameters above and a pre-shared symmetric key which is the API key</td>
+      <td>dfafwerewKkladaHOKJdafdf</td>
+    </tr>
+  </tbody></table>
+
+  <p>
+    The parameters above will be contained in a JSON object in the body of the POST request.
+  </p>
+
+  <p class="APICode_box">
+    { <br>
+    &nbsp;&nbsp; "service_name" : "MPESA", <br>
+    &nbsp;&nbsp; "business_number" : "888555", <br>
+    &nbsp;&nbsp; "transaction_reference" : "DE45GK45" <br>
+    &nbsp;&nbsp; "internal_transaction_id" : 3222 <br>
+    &nbsp;&nbsp; "transaction_timestamp" : "2013-03-18T13:57:00Z" <br>
+    &nbsp;&nbsp; "transaction_type" : "Paybill" <br>
+    &nbsp;&nbsp; "account_number" : "445534" <br>
+    &nbsp;&nbsp; "sender_phone" : "+254903119111" <br>
+    &nbsp;&nbsp; "first_name" : "John" <br>
+    &nbsp;&nbsp; "middle_name" : "K" <br>
+    &nbsp;&nbsp; "last_name" : "Doe" <br>
+    &nbsp;&nbsp; "amount" : 4000 <br>
+    &nbsp;&nbsp; "currency" : "KES" <br>
+    &nbsp;&nbsp; "signature" : "dfafwerewKkladaHOKJdafdf" <br>
+    }
+  </p>
+
+  <p>
+    If using Basic Authentication the user name and password will be encoded in the header. In this case, the K2 system
+    will be assigned authentication credentials to authenticate with the enterprise MIS. [NB] Version 1 &amp; 2 of the API have
+    an error in that the Basic Auth user name password are also passed on as parameters. Please upgrade to version 3.
+  </p>
+
+  <a name="3"></a>
+  <h4>3. Response</h4>
+
+  <p>
+    Upon the successful processing of the POST request, a JSON encoded response will be expected in the following format:
+  </p>
+  <p class="APICode_box">
+    { <br>
+      &nbsp;&nbsp; "status" : "01", <br>
+      &nbsp;&nbsp; "description" : "Accepted", <br>
+      &nbsp;&nbsp; "subscriber_message" : "Message to send to subscriber" <br>
+    }
+  </p>
+
+  <h5>Response fields explanation</h5>
+
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Parameter</th>
+      <th scope="col">Remarks</th>
+      <th scope="col">Example</th>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>The status of the transaction</td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>The status description</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>subscriber_message</td>
+      <td>Optional message to send to the end user who made the payment. This message should not be more than 143 characters long.</td>
+      <td>Thank you John Doe for your payment of Ksh 4000. We value your business</td>
+    </tr>
+  </tbody></table>
+
+  <h5>Status Codes</h5>
+
+  <p>
+    A status code of 01 should be returned upon successful reconciling and posting of the transaction. Other codes are:
+  </p>
+
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Status Code</th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>Account not found</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>Invalid payment</td>
+    </tr>
+  </tbody></table>
+
+  <p>
+    Any response code greater than 01 will be flagged as an error and the corresponding transactions will be flagged on
+    the K2 dashboard for manual reconciliation / processing. In addition to the status codes above, HTTP status codes
+    will also be checked for errors. A 200 http status code will signify that the transaction information was successfully
+    sent.
+  </p>
+
+  <h5>HTTP Status Codes</h5>
+
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Code</th>
+      <th scope="col">Name</th>
+      <th scope="col">Meaning</th>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>OK</td>
+      <td>Standard response for successful HTTP requests</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>Unauthorized</td>
+      <td>Username and/or password is incorrect. The session could not be authenticated</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>Internal Server Error</td>
+      <td>A generic error message, given when no more specific message is suitable</td>
+    </tr>
+  </tbody></table>
+  <br>
+  <br>
+  <h4>Examples</h4>
+
+  <div class="tabbable ExampleApi_container">
+    <ul class="nav nav-tabs ExampleApi_containerNav">
+      <li class="active"><a href="https://app.kopokopo.com/push_api#post_curlv3" data-toggle="tab">cURL</a></li>
+      <!-- Uncomment the examples below once examples actually exist -->
+      <!--
+      <li><a href="#post_rubyv2" data-toggle="tab">Ruby</a></li>
+      <li><a href="#post_javav2" data-toggle="tab">Java</a></li>
+      <li><a href="#post_phpv2" data-toggle="tab">PHP</a></li>
+      <li><a href="#post_pythonv2" data-toggle="tab">Python</a></li>
+      -->
+    </ul>
+
+    <div class="tab-content ExampleApi_content">
+      <div class="tab-pane active" id="post_curlv3">
+        <p>An example using the 'curl' command and basic authentication</p>
+        <p>
+          <script src="./Kopo Kopo_files/c541c62a3d0a417af264.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist28440568" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-http_curl_v3" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-http_curl_v3-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-http_curl_v3-LC1" class="blob-code blob-code-inner js-file-line">curl -i \</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-http_curl_v3-LC2" class="blob-code blob-code-inner js-file-line"> -H "Accept: application/json" \</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-http_curl_v3-LC3" class="blob-code blob-code-inner js-file-line"> -H "Content-Type: application/json" \</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-http_curl_v3-LC4" class="blob-code blob-code-inner js-file-line"> -u username:password \</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-http_curl_v3-LC5" class="blob-code blob-code-inner js-file-line"> -d '{</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-http_curl_v3-LC6" class="blob-code blob-code-inner js-file-line">        "service_name" : "MPESA",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-http_curl_v3-LC7" class="blob-code blob-code-inner js-file-line">        "business_number" : "888555",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-http_curl_v3-LC8" class="blob-code blob-code-inner js-file-line">        "transaction_reference" : "DE45GK45",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-http_curl_v3-LC9" class="blob-code blob-code-inner js-file-line">        "internal_transaction_id" : 3222,</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-http_curl_v3-LC10" class="blob-code blob-code-inner js-file-line">        "transaction_timestamp" : "2013-03-18T13:57:00Z",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-http_curl_v3-LC11" class="blob-code blob-code-inner js-file-line">        "transaction_type" : "Paybill",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-http_curl_v3-LC12" class="blob-code blob-code-inner js-file-line">        "account_number" : "445534",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-http_curl_v3-LC13" class="blob-code blob-code-inner js-file-line">        "sender_phone" : "+254903119111",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-http_curl_v3-LC14" class="blob-code blob-code-inner js-file-line">        "first_name" : "John",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-http_curl_v3-LC15" class="blob-code blob-code-inner js-file-line">        "middle_name" : "K",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-http_curl_v3-LC16" class="blob-code blob-code-inner js-file-line">        "last_name" : "Doe",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-http_curl_v3-LC17" class="blob-code blob-code-inner js-file-line">        "amount" : 4000,</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-http_curl_v3-LC18" class="blob-code blob-code-inner js-file-line">        "currency" : "KES",</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-http_curl_v3-LC19" class="blob-code blob-code-inner js-file-line">        "signature" : "dfafwerewKkladaHOKJdafdf"</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-http_curl_v3-LC20" class="blob-code blob-code-inner js-file-line">      }' \</td>
+      </tr>
+      <tr>
+        <td id="file-http_curl_v3-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-http_curl_v3-LC21" class="blob-code blob-code-inner js-file-line">    "http://your_domain.com/transaction_consumer"</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/c541c62a3d0a417af264/raw/bb5ab5fa279c84307b6167137f99fe205a8bc82c/http_curl_v3" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/c541c62a3d0a417af264#file-http_curl_v3">http_curl_v3</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+        <p></p>
+      </div>
+      <!-- Uncomment the examples below once examples actually exist -->
+      <!--
+      <div class="tab-pane" id="post_rubyv2">
+        <p>Ruby example goes in here.
+      </div>
+      <div class="tab-pane" id="post_javav2">
+        <p>Java example goes in here.</p>
+      </div>
+      <div class="tab-pane" id="post_phpv2">
+        <p>PHP example goes in here</p>
+      </div>
+      <div class="tab-pane" id="post_pythonv2">
+        <p>Python example goes in here</p>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div id="httpv2" style="display: none;">
+    <div class="RightContainer_apiContent">
+
+  <h3>Overview</h3>
+  <p>This is version 2 of the HTTP(S) POST API. Please note there is a newer version available.</p>
+  <p>
+    The K2 HTTP(S) POST Notification API is designed to help developers integrate third-party applications with the
+    Kopo Kopo System (K2). This guide provides the technical information about integrating and configuring a system
+    with K2 using a RESTful HTTP(S) POST as the method of notification for Mobile Money transaction information.
+    Enterprises can leverage the API to allow real-time acquisition of mobile money transactions processed via the
+    K2
+    System. This document describes the HTTP POST parameters and the format of the expected response.
+  </p>
+
+
+  <h3>Synchronous or Near Real-Time Transactions</h3>
+
+  <p>Enterprises that want to receive their mobile money transaction details as they are processed will utilize the
+    XML over HTTP(S) bridge or the HTTP(S) POST Notification API. This document details the HTTP(S) POST Notification
+    API option. The HTTP POST Notification API requires that the Enterprise system in question (Back Office MIS) expose
+    a URL that HTTP or HTTPS (preferable) POST requests can be sent to.
+  </p>
+
+  <a name="1"></a>
+  <h4>1. Authentication</h4>
+  <br>
+
+  <h5>Basic Authentication</h5>
+
+  <p>Authentication currently supported is “Basic” authentication. If authentication is required, the user name and
+    password will have to be provided to the K2 application. If a different authentication method such as an API
+    key/token is desired, one should be provided.
+  </p>
+  <p>Requirements: "Basic" authentication credentials (if in use)</p>
+
+  <h5>HMAC:  Keyed-Hashing for Message Authentication</h5>
+  <p>
+    To improve the security of authentication, a keyed-hash message authentication code (HMAC) is used to calculate a
+    Message Authentication Code (MAC) that is sent over as one of the parameters (signature) and can be used to verify
+    that the request is coming from Kopo Kopo. The cryptographic hash function SHA-1 is used to calculate the
+    HMAC (HMAC-SHA1).
+  </p>
+  <p>
+    The 'secret key' (symmetric_key) that is used in hashing is the 'Api Key' that is located in the 'Account Settings'
+    page of your account. Periodically re-generating the 'Api Key' is advised as a fundamental security practice.
+  </p>
+  <p>
+    To generate the signature (MAC), the base string that is used is the post parameters (key – value pair) sorted in
+    ascending order and concatenated to form a URL encoded string.  Remove the username, password and signature from the
+    POST parameters first before creating the base string. Also make sure that you encode the string using the RFC3986
+    standard e.g spaces are converted to %20 and not + signs. The HMAC is generated using this string, the api key
+    and the SHA-1 algorithm. The result is then Base64 encoded to form the signature that will be passed as a security parameter.
+  </p>
+  <p>Example (pseudo code):</p>
+  <p>
+    Given b=param1, a=param2, c=param3<br>
+    The base string = "a=param2&amp;b=param1&amp;c=param3"<br>
+    symmetric_key = Your API key from your Kopo Kopo account<br>
+    signature = Base64.encode(HMAC.digest(base_string, symmetric_key, SHA1 algorithm))
+  </p>
+  <p>
+    The signature generated is then passed as one of the POST parameters. To verify authenticity of the request,
+    generate the signature using the the same operation above. The two signatures should match.
+  </p>
+  <a name="2"></a>
+  <h4>2. Request</h4>
+
+  <p>The POST request will be sent to a URL provided by the enterprise. The following POST parameters that will be
+    passed will be as follows</p>
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Parameter</th>
+      <th scope="col">Remarks</th>
+      <th scope="col">Example</th>
+    </tr>
+    <tr>
+      <td>service_name</td>
+      <td>The Mobile Money Provider</td>
+      <td>M-PESA</td>
+    </tr>
+    <tr>
+      <td>business_number</td>
+      <td>The Paybill number or Till number being paid to</td>
+      <td>888555</td>
+    </tr>
+    <tr>
+      <td>transaction_reference</td>
+      <td>The reference number as assigned to the transaction by the mobile money provider</td>
+      <td>DE45GK45</td>
+    </tr>
+    <tr>
+      <td>internal_transaction_id</td>
+      <td>The internal ID of the transaction within Kopo Kopo.</td>
+      <td>3222</td>
+    </tr>
+    <tr>
+      <td>transaction_timestamp</td>
+      <td>The time stamp of the transaction in ISO 8601 format. </td>
+      <td>2013-03-18T13:57:00Z</td>
+    </tr>
+    <tr>
+      <td>transaction_type</td>
+      <td>The type of the transaction eg. Paybill, Buygoods etc,</td>
+      <td>Paybill</td>
+    </tr>
+    <tr>
+      <td>account_number</td>
+      <td>The account number as entered by the subscriber. (optional – only for Paybill payments)</td>
+      <td>445534</td>
+    </tr>
+    <tr>
+      <td>sender_phone</td>
+      <td>The subscriber's phone number  (subscriber making the payment) in E.164 format</td>
+      <td>+254903119111</td>
+    </tr>
+    <tr>
+      <td>first_name</td>
+      <td>The first name of the subscriber</td>
+      <td>John</td>
+    </tr>
+    <tr>
+      <td>middle_name</td>
+      <td>The middle name of the subscriber</td>
+      <td>K.</td>
+    </tr>
+    <tr>
+      <td>last_name</td>
+      <td>The last name of the subscriber</td>
+      <td>Doe</td>
+    </tr>
+    <tr>
+      <td>amount</td>
+      <td>The transaction amount</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <td>currency</td>
+      <td>Currency in use</td>
+      <td>KES</td>
+    </tr>
+    <tr>
+      <td>signature</td>
+      <td>Keyed hash value generated from the parameters above and a pre-shared symmetric key which is the API key</td>
+      <td>dfafwerewKkladaHOKJdafdf</td>
+    </tr>
+  </tbody></table>
+
+  <p>
+    If using Basic Authentication the user name and password will be encoded in the header. In this case, the K2 system
+    will be assigned authentication credentials to authenticate with the enterprise MIS.
+  </p>
+
+  <a name="3"></a>
+  <h4>3. Response</h4>
+
+  <p>
+    Upon the successful processing of the POST request, a JSON encoded response will be expected in the following format:
+  </p>
+  <p class="APICode_box">
+    { <br>
+      &nbsp;&nbsp; "status" : "01", <br>
+      &nbsp;&nbsp; "description" : "Accepted", <br>
+      &nbsp;&nbsp; "subscriber_message" : "Message to send to subscriber" <br>
+    }
+  </p>
+
+  <h5>Response fields explanation</h5>
+
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Parameter</th>
+      <th scope="col">Remarks</th>
+      <th scope="col">Example</th>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>The status of the transaction</td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>The status description</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>subscriber_message</td>
+      <td>Optional message to send to the end user who made the payment. This message should not be more than 143 characters long.</td>
+      <td>Thank you John Doe for your payment of Ksh 4000. We value your business</td>
+    </tr>
+  </tbody></table>
+
+  <h5>Status Codes</h5>
+
+  <p>
+    A status code of 01 should be returned upon successful reconciling and posting of the transaction. Other codes are:
+  </p>
+
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Status Code</th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>Account not found</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>Invalid payment</td>
+    </tr>
+  </tbody></table>
+
+  <p>
+    Any response code greater than 01 will be flagged as an error and the corresponding transactions will be flagged on
+    the K2 dashboard for manual reconciliation / processing. In addition to the status codes above, HTTP status codes
+    will also be checked for errors. A 200 http status code will signify that the transaction information was successfully
+    sent.
+  </p>
+
+  <h5>HTTP Status Codes</h5>
+
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Code</th>
+      <th scope="col">Name</th>
+      <th scope="col">Meaning</th>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>OK</td>
+      <td>Standard response for successful HTTP requests</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>Unauthorized</td>
+      <td>Username and/or password is incorrect. The session could not be authenticated</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>Internal Server Error</td>
+      <td>A generic error message, given when no more specific message is suitable</td>
+    </tr>
+  </tbody></table>
+  <br>
+  <br>
+  <h4>Examples</h4>
+
+  <div class="tabbable ExampleApi_container">
+    <ul class="nav nav-tabs ExampleApi_containerNav">
+      <li class="active"><a href="https://app.kopokopo.com/push_api#post_curlv2" data-toggle="tab">cURL</a></li>
+      <!-- Uncomment the examples below once examples actually exist -->
+      <!--
+      <li><a href="#post_rubyv2" data-toggle="tab">Ruby</a></li>
+      <li><a href="#post_javav2" data-toggle="tab">Java</a></li>
+      <li><a href="#post_phpv2" data-toggle="tab">PHP</a></li>
+      <li><a href="#post_pythonv2" data-toggle="tab">Python</a></li>
+      -->
+    </ul>
+
+    <div class="tab-content ExampleApi_content">
+      <div class="tab-pane active" id="post_curlv2">
+        <p>An example using the 'curl' command and basic authentication</p>
+        <p>
+          <script src="./Kopo Kopo_files/2eb1d8713e1a74498edd.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5331548" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-http_curl_v2" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-http_curl_v2-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-http_curl_v2-LC1" class="blob-code blob-code-inner js-file-line">curl -d "service_name=M-PESA&amp;business_number=888555&amp;transaction_reference=DE45GK45&amp;internal_transaction_id=3222&amp;transaction_timestamp=2013-03-18T13%3A57%3A00Z&amp;transaction_type=Paybill&amp;account_number=445=K.&amp;last_name=Doe&amp;amount=4000&amp;currency=KES" https://k2login:K2Password@yourdomain.com/yourscript</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/2eb1d8713e1a74498edd/raw/160ad3979a93dcce748a92389183214f3cb46184/http_curl_v2" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/2eb1d8713e1a74498edd#file-http_curl_v2">http_curl_v2</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+        <p></p>
+      </div>
+      <!-- Uncomment the examples below once examples actually exist -->
+      <!--
+      <div class="tab-pane" id="post_rubyv2">
+        <p>Ruby example goes in here.
+      </div>
+      <div class="tab-pane" id="post_javav2">
+        <p>Java example goes in here.</p>
+      </div>
+      <div class="tab-pane" id="post_phpv2">
+        <p>PHP example goes in here</p>
+      </div>
+      <div class="tab-pane" id="post_pythonv2">
+        <p>Python example goes in here</p>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+
+  </div>
+  <div id="httpv1" style="display: none;">
+    <div class="RightContainer_apiContent">
+
+  <h3>Overview</h3>
+
+  <p>This is version 1 of the HTTP(S) POST API. Please note there is a newer version available.</p>
+  <p>
+    The K2 HTTP(S) POST Notification API is designed to help developers integrate third-party applications with the
+    Kopo Kopo System (K2). This guide provides the technical information about integrating and configuring a system
+    with K2 using a RESTful HTTP(S) POST as the method of notification for Mobile Money transaction information.
+    Enterprises can leverage the API to allow real-time acquisition of mobile money transactions processed via the
+    K2
+    System. This document describes the HTTP POST parameters and the format of the expected response.
+  </p>
+
+  <h3>Synchronous or Near Real-Time Transactions</h3>
+
+  <p>Enterprises who want to receive their mobile money transaction details as they are processed will utilize the
+    XML over HTTP(S) bridge or the HTTP(S) POST Notification API. This document details the HTTP(S) POST Notification
+    API option. The HTTP POST Notification API requires that the Enterprise system in question (Back Office MIS) expose
+    a URL that HTTP or HTTPS (preferable) POST requests can be sent to.
+  </p>
+  <a name="1"></a>
+  <h4>1. Authentication</h4>
+  <br>
+
+  <h5>Basic Authentication</h5>
+
+  <p>Authentication currently supported is “Basic” authentication. If authentication is required, the user name and
+    password will have to be provided to the K2 application. If a different authentication method such as an API
+    key/token is desired, one should be provided.
+  </p>
+  <p>Requirements: "Basic" authentication credentials (if in use)</p>
+
+  <h5>HMAC:  Keyed-Hashing for Message Authentication</h5>
+  <p>
+    To improve the security of authentication, a keyed-hash message authentication code (HMAC) is used to calculate a
+    Message Authentication Code (MAC) that is sent over as one of the parameters (signature) and can be used to verify
+    that the request is coming from Kopo Kopo. The cryptographic hash function SHA-1 is used to calculate the
+    HMAC (HMAC-SHA1).
+  </p>
+  <p>
+    The 'secret key' (symmetric_key) that is used in hashing is the 'Api Key' that is located in the 'Account Settings'
+    page of your account. Periodically re-generating the 'Api Key' is advised as a fundamental security practice.
+  </p>
+  <p>
+    To generate the signature (MAC), the base string that is used is the post parameters (key – value pair) sorted in
+    ascending order and concatenated to form a URL encoded string. Remove the username, password and signature from the
+    POST parameters first before creating the base string. Also make sure that you encode the string using the RFC3986
+    standard e.g spaces are converted to %20 and not + signs. The HMAC is generated using this string, the api key
+    and the SHA-1 algorithm. The result is then Base64 encoded to form the signature that will be passed as a security parameter.
+  </p>
+  <p>Example (pseudo code):</p>
+  <p>
+    Given b=param1, a=param2, c=param3<br>
+    The base string = "a=param2&amp;b=param1&amp;c=param3"<br>
+    symmetric_key = Your API key from your Kopo Kopo account<br>
+    signature = Base64.encode(HMAC.digest(base_string, symmetric_key, SHA1 algorithm))
+  </p>
+  <p>
+    The signature generated is then passed as one of the POST parameters. To verify authenticity of the request,
+    generate the signature using the the same operation above. The two signatures should match.
+  </p>
+  <a name="2"></a>
+  <h4>2. Request</h4>
+
+  <p>The POST request will be sent to a URL provided by the enterprise. The following POST parameters that will be
+    passed will be as follows</p>
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Parameter</th>
+      <th scope="col">Remarks</th>
+      <th scope="col">Example</th>
+    </tr>
+    <tr>
+      <td>k2_account_id</td>
+      <td>The Account Id within the K2 system</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>k2_transaction_id</td>
+      <td>The K2 assigned transaction id</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>mm_system_id</td>
+      <td>The Mobile Money System id</td>
+      <td>M-PESA</td>
+    </tr>
+    <tr>
+      <td>mp_transaction_id</td>
+      <td>The transaction is assigned to this transaction by the Mobile Payment System</td>
+      <td>54445</td>
+    </tr>
+    <tr>
+      <td>biller_number</td>
+      <td>The Paybill phone number of the biller</td>
+      <td>888555</td>
+    </tr>
+    <tr>
+      <td>transaction_date</td>
+      <td>The Date of the transaction</td>
+      <td>26/4/11</td>
+    </tr>
+    <tr>
+      <td>transaction_time</td>
+      <td>The transaction time</td>
+      <td>1:03 PM</td>
+    </tr>
+    <tr>
+      <td>transaction_type</td>
+      <td>The type of transaction</td>
+      <td>Paybill</td>
+    </tr>
+    <tr>
+      <td>ac_no</td>
+      <td>The account number of the subscriber within the enterprise MIS. This field will be blank if it is a Buygoods transaction</td>
+      <td>A123333</td>
+    </tr>
+    <tr>
+      <td>sender</td>
+      <td>The phone number of the sender</td>
+      <td>0723456789</td>
+    </tr>
+    <tr>
+      <td>first_name</td>
+      <td>The sender's first name</td>
+      <td>John</td>
+    </tr>
+    <tr>
+      <td>last_name</td>
+      <td>The sender's last name</td>
+      <td>Doe</td>
+    </tr>
+    <tr>
+      <td>middle_name</td>
+      <td>The sender's middle name</td>
+      <td>K.</td>
+    </tr>
+    <tr>
+      <td>amount</td>
+      <td>The transaction amount</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>currency</td>
+      <td>The currency</td>
+      <td>KES</td>
+    </tr>
+    <tr>
+      <td>signature</td>
+      <td>Keyed hash value generated from the parameters above and a pre-shared symmetric key which is the API key</td>
+      <td>dfafwerewKkladaHOKJdafdf</td>
+    </tr>
+  </tbody></table>
+
+  <p>
+    If using Basic Authentication the user name and password will be encoded in the header. In this case, the K2 system
+    will be assigned authentication credentials to authenticate with the enterprise MIS.
+  </p>
+
+  <a name="3"></a>
+  <h4>3. Response</h4>
+
+  <p>
+    Upon the successful processing of the POST request, a JSON encoded response will be expected in the following format:
+  </p>
+  <p class="APICode_box">
+    { "status" : "01",
+      "description" : "Accepted"
+    }
+  </p>
+
+  <h5>Status Codes:</h5>
+
+  <p>
+    A status code of 01 should be returned upon successful reconciling and posting of the transaction. Other codes are:
+  </p>
+
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Status Code</th>
+      <th scope="col">Description</th>
+    </tr>
+    <tr>
+      <td>01</td>
+      <td>Accepted</td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>Account not found</td>
+    </tr>
+    <tr>
+      <td>03</td>
+      <td>Invalid payment</td>
+    </tr>
+  </tbody></table>
+
+  <p>
+    Any response code greater than 01 will be flagged as an error and the corresponding transactions will be flagged on
+    the K2 dashboard for manual reconciliation / processing. In addition to the status codes above, HTTP status codes
+    will also be checked for errors. A 200 http status code will signify that the transaction information was successfully
+    sent.
+  </p>
+
+  <h5>HTTP Status Codes:</h5>
+
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Code</th>
+      <th scope="col">Name</th>
+      <th scope="col">Meaning</th>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td>OK</td>
+      <td>Standard response for successful HTTP requests</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>Unauthorized</td>
+      <td>Username and/or password is incorrect. The session could not be authenticated</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td>Internal Server Error</td>
+      <td>A generic error message, given when no more specific message is suitable</td>
+    </tr>
+  </tbody></table>
+  <br>
+  <br>
+  <h4>Examples</h4>
+
+  <div class="tabbable ExampleApi_container">
+    <ul class="nav nav-tabs ExampleApi_containerNav">
+      <li class="active"><a href="https://app.kopokopo.com/push_api#post_curlv1" data-toggle="tab">cURL</a></li>
+      <!-- Uncomment the examples below once examples actually exist -->
+      <!--
+      <li><a href="#post_rubyv1" data-toggle="tab">Ruby</a></li>
+      <li><a href="#post_javav1" data-toggle="tab">Java</a></li>
+      <li><a href="#post_phpv1" data-toggle="tab">PHP</a></li>
+      <li><a href="#post_pythonv1" data-toggle="tab">Python</a></li>
+      -->
+    </ul>
+
+    <div class="tab-content ExampleApi_content">
+      <div class="tab-pane active" id="post_curlv1">
+        <p>An example using the 'curl' command and basic authentication</p>
+        <p>
+          <script src="./Kopo Kopo_files/1b2d6f50fb7ceea6643f.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5330291" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-http_curl_v1" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-http_curl_v1-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-http_curl_v1-LC1" class="blob-code blob-code-inner js-file-line">curl -d "k2_account_id=12&amp;k2_transaction_id=15&amp;mm_system_id=M-PESA&amp;mp_transaction_id=54445&amp;biller_number=888555&amp;transaction_date=26%2F4%2F11&amp;transaction_time=1%3A03%20PM&amp;transaction_type=Paybill&amp;ac_no=A123333&amp;sender=0723456789&amp;first_name=John&amp;last_name=Doe&amp;middle_name=K.&amp;amount=1500&amp;currency=KES" https://k2login:K2Password@yourdomain.com/yourscript</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/1b2d6f50fb7ceea6643f/raw/2c6263ae03a06e4933a4221f7818c641ab6a2a17/http_curl_v1" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/1b2d6f50fb7ceea6643f#file-http_curl_v1">http_curl_v1</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+        <p></p>
+      </div>
+      <!-- Uncomment the examples below once examples actually exist -->
+      <!--
+      <div class="tab-pane" id="post_rubyv1">
+        <p>Ruby example goes in here.
+      </div>
+      <div class="tab-pane" id="post_javav1">
+        <p>Java example goes in here.</p>
+      </div>
+      <div class="tab-pane" id="post_phpv1">
+        <p>PHP example goes in here</p>
+      </div>
+      <div class="tab-pane" id="post_pythonv1">
+        <p>Python example goes in here</p>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<script>
+  $('document').ready(function () {
+    $("#httpv3").show();
+    $("#httpv2").hide();
+    $("#httpv1").hide();
+  });
+
+
+  $(function () {
+    $('.dropdown-menu li a').click(function () {
+      $('.DropDown_apiButton').text($(this).text());
+      //alert( $(this).text().toString().trim() );
+      var version = $(this).text().toString().trim()
+      if( version == "Version 1.0" ){
+        $("#httpv1").show();
+        $("#httpv2").hide();
+        $("#httpv3").hide();
+      }else if( version == "Version 2.0" ) {
+        $("#httpv1").hide();
+        $("#httpv2").show();
+        $("#httpv3").hide();
+      }else if(version == "Version 3.0" ){
+        $("#httpv1").hide();
+        $("#httpv2").hide();
+        $("#httpv3").show();
+      }
+    });
+  });
+</script>
+  </div>
+  <div id="xml_doc" style="display: none;">
+    <div class="RightContainer_api">
+  <div class="RightContainer_apiHeader">
+    <h2 class="FloatLeft">XML over HTTP(S) </h2>
+
+    <div class="FloatRight btn-group RightContainer_apiHeader_button">
+      <button class="btn DropDown_apiButton ">Version 2.0</button>
+      <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu   DropDown_SubMenu">
+        <li><a href="https://app.kopokopo.com/push_api#">Version 2.0</a></li>
+        <li><a href="https://app.kopokopo.com/push_api#">Version 1.0</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="xmlv1" style="display: none;">
+    <div class="RightContainer_apiContent">
+
+
+
+<h3>Overview</h3>
+
+  <p>
+     Depricated! Please note that the XML over HTTP has been deprecated in favor of the more 'RestFul' HTTP POST API (v3) which uses JSON.
+     Please switch the HTTP POST API as soon as you can.
+  </p>
+
+<p>This is version 1 of the XML over HTTP API. Please note there is a newer version available.</p>
+
+<p>The K2 XML over HTTP(S) API is designed to help developers integrate third-party applications with the Kopo Kopo
+  System (K2). This guide provides the necessary information required to integrate a system with K2 using a RESTful
+  XML API that facilitates bi-directional communication using XML. This API will work with any programming language
+  or Management Information System (MIS) that is capable of sending and receiving XML documents over the HTTP(S) POST
+  protocol. Enterprises can leverage the API to allow real-time acquisition of mobile money transactions processed via
+  the K2 System. This document describes how the XML commands are formatted and how HTTP(S) POST is used to send the
+  XML data.
+</p>
+
+<h3>Synchronous or Near Real-Time Transactions</h3>
+
+<p>Enterprises who want to receive their mobile money transaction details as they are processed will utilize the XML
+  over HTTP(S) bridge. The interface requires enterprises to expose an XML/HTTP server that will be invoked by the
+  services running from the K2 application.
+</p>
+
+<a name="1"></a>
+<h4>1. Authentication</h4>
+
+<p>Authentication currently supported is “Basic” authentication. If authentication is required, the user name and
+  password will have to be provided to the K2 application. If a different authentication method such as an API
+  key/token
+  is desired, one should be provided.
+</p>
+
+<p>Requirements: “Basic” authentication credentials (if in use)</p>
+
+<h5>HMAC: Keyed-Hashing for Message Authentication</h5>
+
+<p>
+  To improve the security of authentication, a keyed-hash message authentication code (HMAC) is used to calculate a
+  Message Authentication Code (MAC) that is sent over as one of the parameters (signature) and can be used to verify
+  that the request is coming from Kopo Kopo. The cryptographic hash function SHA-1 is used to calculate the
+  HMAC (HMAC-SHA1).
+</p>
+
+<p>
+  The 'secret key' (symmetric_key) that is used in hashing is the 'Api Key' that is located in the 'Account Settings'
+  page of your account. Periodically re-generating the 'Api Key' is advised as a fundamental security practice.
+</p>
+
+<p>
+  To generate the signature (MAC), the base string that is used is the post parameters (key – value pair) sorted in
+  ascending order and concatenated to form a URL encoded string.  Remove the username, password and signature from the
+  POST parameters first before creating the base string. Also make sure that you encode the string using the RFC3986
+  standard e.g spaces are converted to %20 and not + signs. The HMAC is generated using this string, the api key and
+  the SHA-1 algorithm. The result is then Base64 encoded to form the signature that will be passed as a security parameter.
+</p>
+
+<p>Example (pseudo code):</p>
+
+<p>
+  Given b=param1, a=param2, c=param3<br>
+  The base string = "a=param2&amp;b=param1&amp;c=param3"<br>
+  symmetric_key = Your API key from your Kopo Kopo account<br>
+  signature = Base64.encode(HMAC.digest(base_string, symmetric_key, SHA1 algorithm))
+</p>
+
+<p>
+  The signature generated is then passed as one of the POST parameters. To verify authenticity of the request,
+  generate the signature using the the same operation above. The two signatures should match.
+</p>
+<a name="2"></a>
+<h4>2. Request</h4>
+
+<p>
+  The POST request will be sent to a URL provided by the enterprise. (NB: Only the http method POST will be used).
+  Every request will be in XML format, and hence the “Content-Type” header will be set to "application/xml". To have
+  the MIS send an XML response, the “Accept” header will also be set to “application/xml”. An example using curl and
+  basic authentication:
+</p>
+
+<p>
+  The XML data will be in the following format:
+</p>
+
+<p>
+  Sample XML POST Data
+</p>
+
+<p>
+  <script src="./Kopo Kopo_files/c3026c3534f22dee73dc.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5330027" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-sample_xml_v1-xml" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-xml">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-sample_xml_v1-xml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-sample_xml_v1-xml-LC1" class="blob-code blob-code-inner js-file-line">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span><span class="pl-e"> encoding</span>=<span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>?&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-sample_xml_v1-xml-LC2" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">transactions</span> <span class="pl-e">xmlns</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.kopokopo.com/schemas/k2httpxml.xsd<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-sample_xml_v1-xml-LC3" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">transaction_record</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-sample_xml_v1-xml-LC4" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">k2_account_id</span>&gt;12&lt;/<span class="pl-ent">k2_account_id</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-sample_xml_v1-xml-LC5" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">k2_transaction_id</span>&gt;5&lt;/<span class="pl-ent">k2_transaction_id</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-sample_xml_v1-xml-LC6" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">mm_system_id</span>&gt;M-PESA&lt;/<span class="pl-ent">mm_system_id</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-sample_xml_v1-xml-LC7" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">mp_transaction_id</span>&gt;1505&lt;/<span class="pl-ent">mp_transaction_id</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-sample_xml_v1-xml-LC8" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">biller_number</span>&gt;555555&lt;/<span class="pl-ent">biller_number</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-sample_xml_v1-xml-LC9" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">transaction_date</span>&gt;26/4/11&lt;/<span class="pl-ent">transaction_date</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-sample_xml_v1-xml-LC10" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">transaction_time</span>&gt;1:30PM&lt;/<span class="pl-ent">transaction_time</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-sample_xml_v1-xml-LC11" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">transaction_type</span>&gt;Paybill&lt;/<span class="pl-ent">transaction_type</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-sample_xml_v1-xml-LC12" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">ac_no</span>&gt;0123456789&lt;/<span class="pl-ent">account_number</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-sample_xml_v1-xml-LC13" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">sender_phone</span>&gt;0723456789&lt;/<span class="pl-ent">sender_phone</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-sample_xml_v1-xml-LC14" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">first_name</span>&gt;John&lt;/<span class="pl-ent">first_name</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-sample_xml_v1-xml-LC15" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">middle_name</span>&gt;S.&lt;/<span class="pl-ent">middle_name</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-sample_xml_v1-xml-LC16" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">last_name</span>&gt;Karanja&lt;/<span class="pl-ent">last_name</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-sample_xml_v1-xml-LC17" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">amount</span>&gt;2100&lt;/<span class="pl-ent">amount</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-sample_xml_v1-xml-LC18" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">currency</span>&gt;KES&lt;/<span class="pl-ent">currency</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-sample_xml_v1-xml-LC19" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">signature</span>&gt;dfafwerewKkladaHOKJdafdf&lt;/<span class="pl-ent">signature</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-sample_xml_v1-xml-LC20" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">transaction_record</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1-xml-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-sample_xml_v1-xml-LC21" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">transactions</span>&gt;</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/c3026c3534f22dee73dc/raw/dd8fa159a9bdea9216d9ace6576f3301c5250b58/sample_xml_v1.xml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/c3026c3534f22dee73dc#file-sample_xml_v1-xml">sample_xml_v1.xml</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p></p>
+
+
+<table class="table table-bordered ApiTable">
+  <tbody><tr>
+    <th scope="col">Parameter</th>
+    <th scope="col">Remarks</th>
+    <th scope="col">Example</th>
+  </tr>
+  <tr>
+    <td>k2_account_id</td>
+    <td>The Account Id within the K2 system</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>k2_transaction_id</td>
+    <td>The K2 assigned transaction id</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>mm_system_id</td>
+    <td>The Mobile Money System id</td>
+    <td>M-PESA</td>
+  </tr>
+  <tr>
+    <td>mp_transaction_id</td>
+    <td>The transaction is assigned to this transaction by the Mobile Payment System</td>
+    <td>54445</td>
+  </tr>
+  <tr>
+    <td>biller_number</td>
+    <td>The Paybill phone number of the biller</td>
+    <td>888555</td>
+  </tr>
+  <tr>
+    <td>transaction_date</td>
+    <td>The Date of the transaction</td>
+    <td>26/4/11</td>
+  </tr>
+  <tr>
+    <td>transaction_time</td>
+    <td>The transaction time</td>
+    <td>1:03 PM</td>
+  </tr>
+  <tr>
+    <td>transaction_type</td>
+    <td>The type of transaction</td>
+    <td>Paybill</td>
+  </tr>
+  <tr>
+    <td>ac_no</td>
+    <td>The account number of the subscriber within the enterprise MIS. This field will be blank if it is a Buygoods
+      transaction
+    </td>
+    <td>A123333</td>
+  </tr>
+  <tr>
+    <td>sender</td>
+    <td>The phone number of the sender</td>
+    <td>0723456789</td>
+  </tr>
+  <tr>
+    <td>first_name</td>
+    <td>The sender's first name</td>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>last_name</td>
+    <td>The sender's last name</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>middle_name</td>
+    <td>The sender's middle name</td>
+    <td>K.</td>
+  </tr>
+  <tr>
+    <td>amount</td>
+    <td>The transaction amount</td>
+    <td>1500</td>
+  </tr>
+  <tr>
+    <td>currency</td>
+    <td>The currency</td>
+    <td>KES</td>
+  </tr>
+  <tr>
+    <td>signature</td>
+    <td>Keyed hash value generated from the parameters above and a pre-shared symmetric key which is the API key</td>
+    <td>dfafwerewKkladaHOKJdafdf</td>
+  </tr>
+</tbody></table>
+
+<p>
+  If using Basic Authentication the user name and password will be encoded in the header. In this case, the K2 system
+  will be assigned authentication credentials to authenticate with the enterprise MIS.
+</p>
+
+<a name="3"></a>
+<h4>3. Response</h4>
+
+<p>Upon successful processing of the request, an XML response with the format below will be expected.</p>
+
+<p>Sample Response:</p>
+
+<p>
+  <script src="./Kopo Kopo_files/339ab07b61fc2c9129b1.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5330122" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-sample_xml_v1_response-xml" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-xml">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-sample_xml_v1_response-xml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-sample_xml_v1_response-xml-LC1" class="blob-code blob-code-inner js-file-line">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span> = <span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span><span class="pl-e"> encoding</span> = <span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>?&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1_response-xml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-sample_xml_v1_response-xml-LC2" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">response</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1_response-xml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-sample_xml_v1_response-xml-LC3" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">transaction_response</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1_response-xml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-sample_xml_v1_response-xml-LC4" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">k2_account_id</span>&gt;12&lt;/<span class="pl-ent">k2_account_id</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1_response-xml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-sample_xml_v1_response-xml-LC5" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">k2_transaction_id</span>&gt;5&lt;/<span class="pl-ent">k2_transaction_id</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1_response-xml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-sample_xml_v1_response-xml-LC6" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">mp_transaction_id</span>&gt;1505&lt;/<span class="pl-ent">mp_transaction_id</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1_response-xml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-sample_xml_v1_response-xml-LC7" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">status</span>&gt;01&lt;/<span class="pl-ent">status</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1_response-xml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-sample_xml_v1_response-xml-LC8" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">description</span>&gt;Accepted&lt;/<span class="pl-ent">description</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1_response-xml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-sample_xml_v1_response-xml-LC9" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">transaction_response</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v1_response-xml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-sample_xml_v1_response-xml-LC10" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">response</span>&gt;</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/339ab07b61fc2c9129b1/raw/5ca9cae8c9fb214de48ae88ea98b88b13a662d06/sample_xml_v1_response.xml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/339ab07b61fc2c9129b1#file-sample_xml_v1_response-xml">sample_xml_v1_response.xml</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p></p>
+
+<p>Response fields explanation</p>
+
+<table class="table table-bordered ApiTable">
+  <tbody><tr>
+    <th scope="col">Parameter</th>
+    <th scope="col">Remarks</th>
+    <th scope="col">Example</th>
+  </tr>
+  <tr>
+    <td>k2_account_id</td>
+    <td>The Till / Paybill Id within the K2 system</td>
+    <td>12</td>
+  </tr>
+  <tr>
+    <td>k2_transaction_id</td>
+    <td>The internal Kopo Kopo assigned transaction id</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>mp_transaction_id</td>
+    <td>The Confirmation number that was provided by the Mobile Money Provider for the transaction</td>
+    <td>BS44GT66</td>
+  </tr>
+  <tr>
+    <td>status</td>
+    <td>The status code</td>
+    <td>01</td>
+  </tr>
+  <tr>
+    <td>description</td>
+    <td>The status code description</td>
+    <td>Accepted</td>
+  </tr>
+</tbody></table>
+
+
+<h5>Status Codes:</h5>
+
+<p>
+  A status code of 01 should be returned upon successful reconciling and posting of the transaction. Other codes are:
+</p>
+
+<table class="table table-bordered ApiTable">
+  <tbody><tr>
+    <th scope="col">Status Code</th>
+    <th scope="col">Description</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>Accepted</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>Account not found</td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>Invalid payment</td>
+  </tr>
+</tbody></table>
+
+<p>
+  Any response code greater than 01 will be flagged as an error and the corresponding transactions will be flagged on
+  the K2 dashboard for manual reconciliation / processing. In addition to the status codes above, HTTP status codes
+  will also be checked for errors. A 200 HTTP status code will signify that the transaction information was successfully
+  sent.
+</p>
+
+<h5>HTTP Status Codes:</h5>
+
+<table class="table table-bordered ApiTable">
+  <tbody><tr>
+    <th scope="col">Code</th>
+    <th scope="col">Name</th>
+    <th scope="col">Meaning</th>
+  </tr>
+  <tr>
+    <td>200</td>
+    <td>OK</td>
+    <td>Standard response for successful HTTP requests</td>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>Unauthorized</td>
+    <td>Username and/or password is incorrect. The session could not be authenticated</td>
+  </tr>
+  <tr>
+    <td>500</td>
+    <td>Internal Server Error</td>
+    <td>A generic error message, given when no more specific message is suitable</td>
+  </tr>
+</tbody></table>
+
+<h4>XML Schema</h4>
+
+<p>The XML Shchema for the POST request XML is as follows:</p>
+
+<p>
+  <script src="./Kopo Kopo_files/a0e2118ece06c6906811.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5330191" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-xml_http_request_schema-xml" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-xml">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-xml_http_request_schema-xml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-xml_http_request_schema-xml-LC1" class="blob-code blob-code-inner js-file-line">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span><span class="pl-e"> encoding</span>=<span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>?&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-xml_http_request_schema-xml-LC2" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">schema</span> <span class="pl-e">attributeFormDefault</span>=<span class="pl-s"><span class="pl-pds">"</span>unqualified<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-xml_http_request_schema-xml-LC3" class="blob-code blob-code-inner js-file-line">elementFormDefault=<span class="pl-s"><span class="pl-pds">"</span>qualified<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-xml_http_request_schema-xml-LC4" class="blob-code blob-code-inner js-file-line">version=<span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-xml_http_request_schema-xml-LC5" class="blob-code blob-code-inner js-file-line">xmlns:xs=<span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/2001/XMLSchema<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-xml_http_request_schema-xml-LC6" class="blob-code blob-code-inner js-file-line">targetNamespace=<span class="pl-s"><span class="pl-pds">"</span>http://www.kopokopo.com/schemas/k2httpxml.xsd<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-xml_http_request_schema-xml-LC7" class="blob-code blob-code-inner js-file-line">xmlns=<span class="pl-s"><span class="pl-pds">"</span>http://www.kopokopo.com/schemas/k2httpxml.xsd<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-xml_http_request_schema-xml-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-xml_http_request_schema-xml-LC9" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">annotation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-xml_http_request_schema-xml-LC10" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">documentation</span> <span class="pl-e">xml</span><span class="pl-e">:</span><span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-xml_http_request_schema-xml-LC11" class="blob-code blob-code-inner js-file-line">      XML over HTTP Schema for K2 XML-HTTP POST Notification.</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-xml_http_request_schema-xml-LC12" class="blob-code blob-code-inner js-file-line">      Copyright 2013, Kopo Kopo, Inc. All rights reserved.</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-xml_http_request_schema-xml-LC13" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">documentation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-xml_http_request_schema-xml-LC14" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">annotation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-xml_http_request_schema-xml-LC15" class="blob-code blob-code-inner js-file-line">  </td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-xml_http_request_schema-xml-LC16" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transactions<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>transactionsType<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-xml_http_request_schema-xml-LC17" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-xml_http_request_schema-xml-LC18" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transactionsType<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-xml_http_request_schema-xml-LC19" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-xml_http_request_schema-xml-LC20" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_record<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_recordType<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-xml_http_request_schema-xml-LC21" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-xml_http_request_schema-xml-LC22" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-xml_http_request_schema-xml-LC23" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-xml_http_request_schema-xml-LC24" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_recordType<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-xml_http_request_schema-xml-LC25" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-xml_http_request_schema-xml-LC26" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>k2_account_id<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:int<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-xml_http_request_schema-xml-LC27" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>k2_transaction_id<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:int<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-xml_http_request_schema-xml-LC28" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>mm_system_id<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-xml_http_request_schema-xml-LC29" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>mp_transaction_id<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-xml_http_request_schema-xml-LC30" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>biller_number<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:int<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-xml_http_request_schema-xml-LC31" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_date<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:dateTime<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-xml_http_request_schema-xml-LC32" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_time<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:dateTime<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-xml_http_request_schema-xml-LC33" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_type<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-xml_http_request_schema-xml-LC34" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>ac_no<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-xml_http_request_schema-xml-LC35" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>sender_phone<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-xml_http_request_schema-xml-LC36" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>first_name<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-xml_http_request_schema-xml-LC37" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>middle_name<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-xml_http_request_schema-xml-LC38" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>last_name<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-xml_http_request_schema-xml-LC39" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>amount<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:decimal<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-xml_http_request_schema-xml-LC40" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>currency<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-xml_http_request_schema-xml-LC41" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-xml_http_request_schema-xml-LC42" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema-xml-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-xml_http_request_schema-xml-LC43" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">schema</span>&gt;</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/a0e2118ece06c6906811/raw/5c4c40c0960a73cd109155023b47cfebaba1d13a/xml_http_request_schema.xml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/a0e2118ece06c6906811#file-xml_http_request_schema-xml">xml_http_request_schema.xml</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p></p>
+
+<p>The Schema for the XML response expected is as follows:</p>
+
+<p>
+  <script src="./Kopo Kopo_files/fb6cbc41df6878303072.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5330214" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-xml_http_response_v1-xml" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-xml">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-xml_http_response_v1-xml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-xml_http_response_v1-xml-LC1" class="blob-code blob-code-inner js-file-line">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span><span class="pl-e"> encoding</span>=<span class="pl-s"><span class="pl-pds">"</span>utf-8<span class="pl-pds">"</span></span>?&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-xml_http_response_v1-xml-LC2" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">schema</span> <span class="pl-e">attributeFormDefault</span>=<span class="pl-s"><span class="pl-pds">"</span>unqualified<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-xml_http_response_v1-xml-LC3" class="blob-code blob-code-inner js-file-line">elementFormDefault=<span class="pl-s"><span class="pl-pds">"</span>qualified<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-xml_http_response_v1-xml-LC4" class="blob-code blob-code-inner js-file-line">version=<span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-xml_http_response_v1-xml-LC5" class="blob-code blob-code-inner js-file-line">xmlns:xs=<span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/2001/XMLSchema<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-xml_http_response_v1-xml-LC6" class="blob-code blob-code-inner js-file-line">targetNamespace=<span class="pl-s"><span class="pl-pds">"</span>http://www.kopokopo.com/schemas/k2httpxmlresp.xsd<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-xml_http_response_v1-xml-LC7" class="blob-code blob-code-inner js-file-line">xmlns=<span class="pl-s"><span class="pl-pds">"</span>http://www.kopokopo.com/schemas/k2httpxmlresp.xsd<span class="pl-pds">"</span></span>        &gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-xml_http_response_v1-xml-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-xml_http_response_v1-xml-LC9" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">annotation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-xml_http_response_v1-xml-LC10" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">documentation</span> <span class="pl-e">xml</span><span class="pl-e">:</span><span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-xml_http_response_v1-xml-LC11" class="blob-code blob-code-inner js-file-line">      XML over HTTP Schema for K2 XML-HTTP POST Notification.</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-xml_http_response_v1-xml-LC12" class="blob-code blob-code-inner js-file-line">      Copyright 2013, Kopo Kopo, Inc. All rights reserved.</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-xml_http_response_v1-xml-LC13" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">documentation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-xml_http_response_v1-xml-LC14" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">annotation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-xml_http_response_v1-xml-LC15" class="blob-code blob-code-inner js-file-line">  </td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-xml_http_response_v1-xml-LC16" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>response<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>responseType<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-xml_http_response_v1-xml-LC17" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-xml_http_response_v1-xml-LC18" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>responseType<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-xml_http_response_v1-xml-LC19" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-xml_http_response_v1-xml-LC20" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_response<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_responseType<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-xml_http_response_v1-xml-LC21" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-xml_http_response_v1-xml-LC22" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-xml_http_response_v1-xml-LC23" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-xml_http_response_v1-xml-LC24" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_responseType<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-xml_http_response_v1-xml-LC25" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-xml_http_response_v1-xml-LC26" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>k2_account_id<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:int<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-xml_http_response_v1-xml-LC27" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>k2_transaction_id<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:int<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-xml_http_response_v1-xml-LC28" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>mp_transaction_id<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-xml_http_response_v1-xml-LC29" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>status<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:int<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-xml_http_response_v1-xml-LC30" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> /&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-xml_http_response_v1-xml-LC31" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-xml_http_response_v1-xml-LC32" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-xml_http_response_v1-xml-LC33" class="blob-code blob-code-inner js-file-line">  </td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v1-xml-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-xml_http_response_v1-xml-LC34" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">schema</span>&gt;</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/fb6cbc41df6878303072/raw/8960ceb0bb95bf3c816d411a9338f7e9df5506ad/xml_http_response_v1.xml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/fb6cbc41df6878303072#file-xml_http_response_v1-xml">xml_http_response_v1.xml</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p></p>
+
+
+<h4>Examples</h4>
+
+<div class="tabbable ExampleApi_container">
+  <ul class="nav nav-tabs ExampleApi_containerNav">
+    <li class="active"><a href="https://app.kopokopo.com/push_api#xml_curlv1" data-toggle="tab">cURL</a></li>
+    <!-- Uncomment the examples below once examples actually exist -->
+    <!--
+    <li><a href="#xml_rubyv1" data-toggle="tab">Ruby</a></li>
+    <li><a href="#xml_javav1" data-toggle="tab">Java</a></li>
+    <li><a href="#xml_phpv1" data-toggle="tab">PHP</a></li>
+    <li><a href="#xml_pythonv1" data-toggle="tab">Python</a></li>
+    -->
+  </ul>
+
+  <div class="tab-content ExampleApi_content">
+    <div class="tab-pane active" id="xml_curlv1">
+      <p>
+        <script src="./Kopo Kopo_files/192cdecb0e13e15d9196.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5330229" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-xml_http_curl" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-xml_http_curl-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-xml_http_curl-LC1" class="blob-code blob-code-inner js-file-line">curl -d '@/home/K2_system/test.xml'  -H 'Accept: application/xml' -H 'Content-Type: application/xml' https://username:password@company.your_mis_system.com/receive_transactions</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/192cdecb0e13e15d9196/raw/7638abae4c308a355700d9417b1ee5030316bb68/xml_http_curl" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/192cdecb0e13e15d9196#file-xml_http_curl">xml_http_curl</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+      <p></p>
+    </div>
+    <!-- Uncomment the examples below once examples actually exist -->
+    <!--
+    <div class="tab-pane" id="xml_rubyv1">
+      <p>Ruby example goes in here</p>
+    </div>
+    <div class="tab-pane" id="xml_javav1">
+      <p>Java example goes in here.</p>
+    </div>
+    <div class="tab-pane" id="xml_phpv1">
+      <p>PHP example goes in here</p>
+    </div>
+    <div class="tab-pane" id="xml_pythonv1">
+      <p>Python example goes in here</p>
+    </div>
+    -->
+  </div>
+</div>
+</div>
+  </div>
+  <div id="xmlv2">
+    <div class="RightContainer_apiContent">
+
+<h3>Overview</h3>
+
+  <p>
+    Depricated! Please note that the XML over HTTP has been deprecated in favor of the more 'RestFul' HTTP POST API (v3) which uses JSON.
+    Please switch the HTTP POST API as soon as you can.
+  </p>
+
+<p>The K2 XML over HTTP(S) API is designed to help developers integrate third-party applications with the Kopo Kopo
+  System (K2). This guide provides the necessary information required to integrate a system with K2 using a RESTful
+  XML API that facilitates bi-directional communication using XML. This API will work with any programming language
+  or Management Information System (MIS) that is capable of sending and receiving XML documents over the HTTP(S) POST
+  protocol. Enterprises can leverage the API to allow real-time acquisition of mobile money transactions processed via
+  the K2 System. This document describes how the XML commands are formatted and how HTTP(S) POST is used to send the
+  XML data.
+</p>
+
+<h3>Synchronous or Near Real-Time Transactions</h3>
+
+<p>Enterprises who want to receive their mobile money transaction details as they are processed will utilize the XML
+  over HTTP(S) bridge. The interface requires enterprises to expose an XML/HTTP server that will be invoked by the
+  services running from the K2 application.
+</p>
+
+<a name="1"></a>
+<h4>1. Authentication</h4>
+
+<p>Authentication currently supported is "Basic" authentication. If authentication is required, the user name and
+  password will have to be provided to the K2 application. If a different authentication method such as an API
+  key/token
+  is desired, one should be provided.
+</p>
+
+<p>Requirements: “Basic” authentication credentials (if in use)</p>
+
+<h5>HMAC: Keyed-Hashing for Message Authentication</h5>
+
+<p>
+  To improve the security of authentication, a keyed-hash message authentication code (HMAC) is used to calculate a
+  Message Authentication Code (MAC) that is sent over as one of the parameters (signature) and can be used to verify
+  that the request is coming from Kopo Kopo. The cryptographic hash function SHA-1 is used to calculate the
+  HMAC (HMAC-SHA1).
+</p>
+
+<p>
+  The 'secret key' (symmetric_key) that is used in hashing is the 'Api Key' that is located in the 'Account Settings'
+  page of your account. Periodically re-generating the 'Api Key' is advised as a fundamental security practice.
+</p>
+
+<p>
+  To generate the signature (MAC), the base string that is used is the post parameters (key – value pair) sorted in
+  ascending order and concatenated to form a URL encoded string.  Remove the username, password and signature from the
+  POST parameters first before creating the base string. Also make sure that you encode the string using the RFC3986
+  standard e.g spaces are converted to %20 and not + signs. The HMAC is generated using this string, the api key
+  and the SHA-1 algorithm. The result is then Base64 encoded to form the signature that will be passed as a security parameter.
+</p>
+
+<p>Example (pseudo code):</p>
+
+<p>
+  Given b=param1, a=param2, c=param3<br>
+  The base string = "a=param2&amp;b=param1&amp;c=param3"<br>
+  symmetric_key = Your API key from your Kopo Kopo account<br>
+  signature = Base64.encode(HMAC.digest(base_string, symmetric_key, SHA1 algorithm))
+</p>
+
+<p>
+  The signature generated is then passed as one of the POST parameters. To verify authenticity of the request,
+  generate the signature using the the same operation above. The two signatures should match.
+</p>
+
+<a name="2"></a>
+<h4>2. Request</h4>
+
+<p>
+  The POST request will be sent to a URL provided by the enterprise. (NB: Only the http method POST will be used).
+  Every request will be in XML format, and hence the “Content-Type” header will be set to "application/xml". To have
+  the MIS send an XML response, the “Accept” header will also be set to “application/xml”. An example using curl and
+  basic authentication:
+</p>
+
+<p>
+  The XML data will be in the following format:
+</p>
+
+<p>
+  Sample XML POST Data
+</p>
+
+<p>
+  <script src="./Kopo Kopo_files/0654e3233b6f4b3bfa89.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5330869" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-sample_xml_v2-xml" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-xml">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-sample_xml_v2-xml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-sample_xml_v2-xml-LC1" class="blob-code blob-code-inner js-file-line">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span><span class="pl-e"> encoding</span>=<span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>?&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-sample_xml_v2-xml-LC2" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">transaction_record</span> <span class="pl-e">xmlns</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.kopokopo.com/schemas/k2httpxmlv2.xsd<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-sample_xml_v2-xml-LC3" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">service_name</span>&gt;M_PESA&lt;/<span class="pl-ent">service_name</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-sample_xml_v2-xml-LC4" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">business_number</span>&gt;888555&lt;/<span class="pl-ent">business_number</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-sample_xml_v2-xml-LC5" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">transaction_reference</span>&gt;DE45GK45&lt;/<span class="pl-ent">transaction_reference</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-sample_xml_v2-xml-LC6" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">internal_transaction_id</span>&gt;3222&lt;/<span class="pl-ent">internal_transaction_id</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-sample_xml_v2-xml-LC7" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">transaction_timestamp</span>&gt;2013-03-18T13:57:00Z&lt;/<span class="pl-ent">transaction_timestamp</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-sample_xml_v2-xml-LC8" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">transaction_type</span>&gt;Paybill&lt;/<span class="pl-ent">transaction_type</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-sample_xml_v2-xml-LC9" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">account_number</span>&gt;445534&lt;/<span class="pl-ent">account_number</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-sample_xml_v2-xml-LC10" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">sender_phone</span>&gt;+254903119111&lt;/<span class="pl-ent">sender_phone</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-sample_xml_v2-xml-LC11" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">first_name</span>&gt;John&lt;/<span class="pl-ent">first_name</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-sample_xml_v2-xml-LC12" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">middle_name</span>&gt;K.&lt;/<span class="pl-ent">middle_name</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-sample_xml_v2-xml-LC13" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">last_name</span>&gt;Doe&lt;/<span class="pl-ent">last_name</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-sample_xml_v2-xml-LC14" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">amount</span>&gt;4000&lt;/<span class="pl-ent">amount</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-sample_xml_v2-xml-LC15" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">currency</span>&gt;KES&lt;/<span class="pl-ent">currency</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-sample_xml_v2-xml-LC16" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">signature</span>&gt;dfafwerewKkladaHOKJdafdf&lt;/<span class="pl-ent">signature</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2-xml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-sample_xml_v2-xml-LC17" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">transaction_record</span>&gt;</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/0654e3233b6f4b3bfa89/raw/de8ee0102d958c457dc529d4b9379d702f148815/sample_xml_v2.xml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/0654e3233b6f4b3bfa89#file-sample_xml_v2-xml">sample_xml_v2.xml</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p></p>
+
+
+<table class="table table-bordered ApiTable">
+  <tbody><tr>
+    <th scope="col">Parameter</th>
+    <th scope="col">Remarks</th>
+    <th scope="col">Example</th>
+  </tr>
+  <tr>
+    <td>service_name</td>
+    <td>The Mobile Money Provider</td>
+    <td>M-PESA</td>
+  </tr>
+  <tr>
+    <td>business_number</td>
+    <td>The Paybill number or Till number being paid to</td>
+    <td>888555</td>
+  </tr>
+  <tr>
+    <td>transaction_reference</td>
+    <td>The reference number as assigned to the transaction by the mobile money provider</td>
+    <td>DE45GK45</td>
+  </tr>
+  <tr>
+    <td>internal_transaction_id</td>
+    <td>The internal ID of the transaction within Kopo Kopo.</td>
+    <td>3222</td>
+  </tr>
+  <tr>
+    <td>transaction_timestamp</td>
+    <td>The time stamp of the transaction in ISO 8601 format.</td>
+    <td>2013-03-18T13:57:00Z</td>
+  </tr>
+  <tr>
+    <td>transaction_type</td>
+    <td>The type of the transaction eg. Paybill, Buygoods etc,</td>
+    <td>Paybill</td>
+  </tr>
+  <tr>
+    <td>account_number</td>
+    <td>The account number as entered by the subscriber. (optional – only for Paybill payments)</td>
+    <td>445534</td>
+  </tr>
+  <tr>
+    <td>sender_phone</td>
+    <td>The subscriber's phone number (subscriber making the payment) in E.164 format</td>
+    <td>+254903119111</td>
+  </tr>
+  <tr>
+    <td>first_name</td>
+    <td>The first name of the subscriber</td>
+    <td>John</td>
+  </tr>
+  <tr>
+    <td>middle_name</td>
+    <td>The middle name of the subscriber</td>
+    <td>K.</td>
+  </tr>
+  <tr>
+    <td>last_name</td>
+    <td>The last name of the subscriber</td>
+    <td>Doe</td>
+  </tr>
+  <tr>
+    <td>amount</td>
+    <td>The transaction amount</td>
+    <td>4000</td>
+  </tr>
+  <tr>
+    <td>currency</td>
+    <td>Currency in use</td>
+    <td>KES</td>
+  </tr>
+  <tr>
+    <td>signature</td>
+    <td>Keyed hash value generated from the parameters above and a pre-shared symmetric key which is the API key</td>
+    <td>dfafwerewKkladaHOKJdafdf</td>
+  </tr>
+</tbody></table>
+
+<p>
+  If using Basic Authentication the user name and password will be encoded in the header. In this case, the K2 system
+  will be assigned authentication credentials to authenticate with the enterprise MIS.
+</p>
+
+<a name="3"></a>
+<h4>3. Response</h4>
+
+<p>Upon successful processing of the request, an XML response with the format below will be expected.</p>
+
+<p>Sample Response:</p>
+
+<p>
+  <script src="./Kopo Kopo_files/f8fc3ab88e224a9296c2.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5330906" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-sample_xml_v2_response-xml" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-xml">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-sample_xml_v2_response-xml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-sample_xml_v2_response-xml-LC1" class="blob-code blob-code-inner js-file-line">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span> = <span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span><span class="pl-e"> encoding</span> = <span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>?&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2_response-xml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-sample_xml_v2_response-xml-LC2" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">transaction_response</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2_response-xml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-sample_xml_v2_response-xml-LC3" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">internal_transaction_id</span>&gt;3222&lt;/<span class="pl-ent">internal_transaction_id</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2_response-xml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-sample_xml_v2_response-xml-LC4" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">transaction_reference</span>&gt;DE45GK45&lt;/<span class="pl-ent">transaction_reference</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2_response-xml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-sample_xml_v2_response-xml-LC5" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">status</span>&gt;01&lt;/<span class="pl-ent">status</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2_response-xml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-sample_xml_v2_response-xml-LC6" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">description</span>&gt;Accepted&lt;/<span class="pl-ent">description</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2_response-xml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-sample_xml_v2_response-xml-LC7" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">subscriber_message</span>&gt;Thank you John Doe for your payment&lt;/<span class="pl-ent">subscriber_message</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-sample_xml_v2_response-xml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-sample_xml_v2_response-xml-LC8" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">transaction_response</span>&gt;</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/f8fc3ab88e224a9296c2/raw/1f7eef2d31de7ed24cc2aafb8e8017b75bea816f/sample_xml_v2_response.xml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/f8fc3ab88e224a9296c2#file-sample_xml_v2_response-xml">sample_xml_v2_response.xml</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p></p>
+
+<p>Response fields explanation</p>
+
+<table class="table table-bordered ApiTable">
+  <tbody><tr>
+    <th scope="col">Parameter</th>
+    <th scope="col">Remarks</th>
+    <th scope="col">Example</th>
+  </tr>
+  <tr>
+    <td>internal_transaction_id</td>
+    <td>The internal ID of the transaction within Kopo Kopo.</td>
+    <td>3222</td>
+  </tr>
+  <tr>
+    <td>transaction_reference</td>
+    <td>The reference number as assigned to the transaction by the mobile money provider</td>
+    <td>DE45GK45</td>
+  </tr>
+  <tr>
+    <td>status</td>
+    <td>The status code</td>
+    <td>01</td>
+  </tr>
+  <tr>
+    <td>subscriber_message</td>
+    <td>Optional message to send to the end user who made the payment. This message should not be more than 143 characters long.</td>
+    <td>Thank you John Doe for your payment of Ksh 4000. We value your business</td>
+  </tr>
+
+</tbody></table>
+
+
+<h5>Status Codes:</h5>
+
+<p>
+  A status code of 01 should be returned upon successful reconciling and posting of the transaction. Other codes are:
+</p>
+
+<table class="table table-bordered ApiTable">
+  <tbody><tr>
+    <th scope="col">Status Code</th>
+    <th scope="col">Description</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>Accepted</td>
+  </tr>
+  <tr>
+    <td>02</td>
+    <td>Account not found</td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>Invalid payment</td>
+  </tr>
+</tbody></table>
+
+<p>
+  Any response code greater than 01 will be flagged as an error and the corresponding transactions will be flagged on
+  the K2 dashboard for manual reconciliation / processing. In addition to the status codes above, HTTP status codes
+  will also be checked for errors. A 200 HTTP status code will signify that the transaction information was successfully
+  sent.
+</p>
+
+<h5>HTTP Status Codes:</h5>
+
+<table class="table table-bordered ApiTable">
+  <tbody><tr>
+    <th scope="col">Code</th>
+    <th scope="col">Name</th>
+    <th scope="col">Meaning</th>
+  </tr>
+  <tr>
+    <td>200</td>
+    <td>OK</td>
+    <td>Standard response for successful HTTP requests</td>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>Unauthorized</td>
+    <td>Username and/or password is incorrect. The session could not be authenticated</td>
+  </tr>
+  <tr>
+    <td>500</td>
+    <td>Internal Server Error</td>
+    <td>A generic error message, given when no more specific message is suitable</td>
+  </tr>
+</tbody></table>
+
+<h4>XML Schema</h4>
+
+<p>The XML Shchema for the POST request XML is as follows:</p>
+
+<p>
+  <script src="./Kopo Kopo_files/d0bfa92c7006a52944b2.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5331096" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-xml_http_request_schema_v2-xml" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-xml">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-xml_http_request_schema_v2-xml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC1" class="blob-code blob-code-inner js-file-line">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span><span class="pl-e"> encoding</span>=<span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>?&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC2" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">schema</span> <span class="pl-e">attributeFormDefault</span>=<span class="pl-s"><span class="pl-pds">"</span>unqualified<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC3" class="blob-code blob-code-inner js-file-line">           <span class="pl-e">elementFormDefault</span>=<span class="pl-s"><span class="pl-pds">"</span>qualified<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC4" class="blob-code blob-code-inner js-file-line">           <span class="pl-e">targetNamespace</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.kopokopo.com/schemas/k2httpxmlv2.xsd<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC5" class="blob-code blob-code-inner js-file-line">           <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">xs</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/2001/XMLSchema<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC6" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC7" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">annotation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC8" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">documentation</span> <span class="pl-e">xml</span><span class="pl-e">:</span><span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC9" class="blob-code blob-code-inner js-file-line">        XML over HTTP Schema for K2 XML-HTTP POST Notification.</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC10" class="blob-code blob-code-inner js-file-line">        Copyright 2013, Kopo Kopo, Inc. All rights reserved.</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC11" class="blob-code blob-code-inner js-file-line">      &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">documentation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC12" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">annotation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC13" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC14" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_record<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>k2h:transaction_recordType<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC15" class="blob-code blob-code-inner js-file-line">              <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">k2h</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.kopokopo.com/schemas/k2httpxmlv2.xsd<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC16" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_recordType<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC17" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC18" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>service_name<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC19" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>business_number<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC20" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_reference<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC21" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:int<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>internal_transaction_id<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC22" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:dateTime<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_timestamp<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC23" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_type<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC24" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>account_number<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC25" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>sender_phone<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC26" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>first_name<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC27" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>middle_name<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC28" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>last_name<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC29" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:long<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>amount<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC30" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>currency<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC31" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>signature<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC32" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC33" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_request_schema_v2-xml-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-xml_http_request_schema_v2-xml-LC34" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">schema</span>&gt;</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/d0bfa92c7006a52944b2/raw/7d76a89641f02f3517c3a81f31d46a14521c722e/xml_http_request_schema_v2.xml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/d0bfa92c7006a52944b2#file-xml_http_request_schema_v2-xml">xml_http_request_schema_v2.xml</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p></p>
+
+<p>The Schema for the XML response expected is as follows:</p>
+
+<p>
+  <script src="./Kopo Kopo_files/cfd37f57ff963c90f357.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5331106" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-xml_http_response_v2-xml" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-xml">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-xml_http_response_v2-xml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-xml_http_response_v2-xml-LC1" class="blob-code blob-code-inner js-file-line">&lt;?<span class="pl-ent">xml</span><span class="pl-e"> version</span>=<span class="pl-s"><span class="pl-pds">"</span>1.0<span class="pl-pds">"</span></span><span class="pl-e"> encoding</span>=<span class="pl-s"><span class="pl-pds">"</span>UTF-8<span class="pl-pds">"</span></span>?&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-xml_http_response_v2-xml-LC2" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">schema</span> <span class="pl-e">attributeFormDefault</span>=<span class="pl-s"><span class="pl-pds">"</span>unqualified<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-xml_http_response_v2-xml-LC3" class="blob-code blob-code-inner js-file-line">           <span class="pl-e">elementFormDefault</span>=<span class="pl-s"><span class="pl-pds">"</span>qualified<span class="pl-pds">"</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-xml_http_response_v2-xml-LC4" class="blob-code blob-code-inner js-file-line">           <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">xs</span>=<span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/2001/XMLSchema<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-xml_http_response_v2-xml-LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-xml_http_response_v2-xml-LC6" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">annotation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-xml_http_response_v2-xml-LC7" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">documentation</span> <span class="pl-e">xml</span><span class="pl-e">:</span><span class="pl-e">lang</span>=<span class="pl-s"><span class="pl-pds">"</span>en<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-xml_http_response_v2-xml-LC8" class="blob-code blob-code-inner js-file-line">        XML over HTTP Schema for K2 XML-HTTP POST Notification.</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-xml_http_response_v2-xml-LC9" class="blob-code blob-code-inner js-file-line">        Copyright 2013, Kopo Kopo, Inc. All rights reserved.</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-xml_http_response_v2-xml-LC10" class="blob-code blob-code-inner js-file-line">      &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">documentation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-xml_http_response_v2-xml-LC11" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">annotation</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-xml_http_response_v2-xml-LC12" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-xml_http_response_v2-xml-LC13" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_response<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_responseType<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-xml_http_response_v2-xml-LC14" class="blob-code blob-code-inner js-file-line">  &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_responseType<span class="pl-pds">"</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-xml_http_response_v2-xml-LC15" class="blob-code blob-code-inner js-file-line">    &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-xml_http_response_v2-xml-LC16" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:int<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>internal_transaction_id<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-xml_http_response_v2-xml-LC17" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>transaction_reference<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-xml_http_response_v2-xml-LC18" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>status<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-xml_http_response_v2-xml-LC19" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>description<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-xml_http_response_v2-xml-LC20" class="blob-code blob-code-inner js-file-line">      &lt;<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">element</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>xs:string<span class="pl-pds">"</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">"</span>subscriber_message<span class="pl-pds">"</span></span>/&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-xml_http_response_v2-xml-LC21" class="blob-code blob-code-inner js-file-line">    &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">sequence</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-xml_http_response_v2-xml-LC22" class="blob-code blob-code-inner js-file-line">  &lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">complexType</span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-xml_http_response_v2-xml-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-xml_http_response_v2-xml-LC23" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">xs</span><span class="pl-ent">:</span><span class="pl-ent">schema</span>&gt;</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/cfd37f57ff963c90f357/raw/e3d5f4b25d282bde8d32fb0be37efecbd8bc3584/%20xml_http_response_v2.xml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/cfd37f57ff963c90f357#file-xml_http_response_v2-xml"> xml_http_response_v2.xml</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+<p></p>
+
+
+<h4>Examples</h4>
+
+<div class="tabbable ExampleApi_container">
+  <ul class="nav nav-tabs ExampleApi_containerNav">
+    <li class="active"><a href="https://app.kopokopo.com/push_api#xml_curlv2" data-toggle="tab">cURL</a></li>
+    <!-- Uncomment the examples below once examples actually exist -->
+    <!--
+    <li><a href="#xml_rubyv2" data-toggle="tab">Ruby</a></li>
+    <li><a href="#xml_javav2" data-toggle="tab">Java</a></li>
+    <li><a href="#xml_phpv2" data-toggle="tab">PHP</a></li>
+    <li><a href="#xml_pythonv2" data-toggle="tab">Python</a></li>
+    -->
+  </ul>
+
+  <div class="tab-content ExampleApi_content">
+    <div class="tab-pane active" id="xml_curlv2">
+      <p>
+        <script src="./Kopo Kopo_files/192cdecb0e13e15d9196.js"></script><link rel="stylesheet" href="./Kopo Kopo_files/gist-embed-87673c31a5b37b5e6556b63e1081ebbc.css"></p><div id="gist5330229" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-xml_http_curl" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-xml_http_curl-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-xml_http_curl-LC1" class="blob-code blob-code-inner js-file-line">curl -d '@/home/K2_system/test.xml'  -H 'Accept: application/xml' -H 'Content-Type: application/xml' https://username:password@company.your_mis_system.com/receive_transactions</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/dondeng/192cdecb0e13e15d9196/raw/7638abae4c308a355700d9417b1ee5030316bb68/xml_http_curl" style="float:right">view raw</a>
+        <a href="https://gist.github.com/dondeng/192cdecb0e13e15d9196#file-xml_http_curl">xml_http_curl</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+
+      <p></p>
+    </div>
+    <!-- Uncomment the examples below once examples actually exist -->
+    <!--
+    <div class="tab-pane" id="xml_rubyv2">
+      <p>Ruby example goes in here</p>
+    </div>
+    <div class="tab-pane" id="xml_javav2">
+      <p>Java example goes in here.</p>
+    </div>
+    <div class="tab-pane" id="xml_phpv2">
+      <p>PHP example goes in here</p>
+    </div>
+    <div class="tab-pane" id="xml_pythonv2">
+      <p>Python example goes in here</p>
+    </div>
+    -->
+  </div>
+</div>
+</div>
+
+  </div>
+</div>
+<script>
+  $('document').ready(function () {
+    $("#xmlv2").show();
+    $("#xmlv1").hide();
+  });
+
+
+  $(function () {
+    $('.dropdown-menu li a').click(function () {
+      $('.DropDown_apiButton').text($(this).text());
+      //alert( $(this).text().toString().trim() );
+      var version = $(this).text().toString().trim()
+      if (version == "Version 1.0") {
+        $("#xmlv1").show();
+        $("#xmlv2").hide();
+      } else if (version = "Version 2.0") {
+        $("#xmlv2").show();
+        $("#xmlv1").hide();
+      }
+    });
+  });
+</script>
+
+  </div>
+  <div id="ftp_doc" style="display: none;">
+    <div class="RightContainer_api">
+  <div class="RightContainer_apiHeader">
+    <h2 class="FloatLeft">FTP </h2>
+
+    <div class="FloatRight btn-group RightContainer_apiHeader_button">
+      <button class="btn DropDown_apiButton ">Version 1.0</button>
+      <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu   DropDown_SubMenu">
+        <li><a href="https://app.kopokopo.com/push_api#">Version 1.0</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="ftppv1">
+    <div class="RightContainer_apiContent">
+
+  <h3>Overview</h3>
+
+  <p>
+    The K2 FTP Notification API is designed to help developers integrate third-party applications with the Kopo Kopo System
+    (K2). This guide provides the technical information about integrating and configuring a system with K2 by fetching files
+    from a FTP server as a method of notification for Mobile Money transaction information.  Enterprises can leverage the
+    API to allow real-time acquisition of mobile money transactions processed via the K2 System. This document describes
+    how the FTP notification option works.
+  </p>
+
+  <h3>How it works</h3>
+
+  <p>
+    The enterprise first sets their “Back office notification” option on app.kopokopo.com to FTP. K2 will then periodically
+    generate a CSV file that will be sent to the designated FTP server. The CSV file contains all received mobile money
+    transactions within the stipulated period of time. The enterprise can then get the files from the FTP server and parse
+    the CSV file to get their mobile money transactions.
+  </p>
+
+  <a name="1"></a>
+  <h3>Configuration</h3>
+  <br>
+
+  <p>
+    Log into your K2 account and go to Settings &gt; Account settings in the top right area of the page. In the "Other" section,
+    select FTP in the "Back office notifications" drop down menu and click on "Change".
+  </p>
+
+  <img src="./Kopo Kopo_files/change_ftp-0293fe9932cbc89e3610d9f74a3d625321a888fdd5e6379ac1543c4b95ab3c2a.png" alt="Change ftp">
+  <p>
+    You will be redirected to the “FTP configuration” page and given the option to choose between using K2's FTP server
+    or any other of your choice.
+  </p>
+
+  <img src="./Kopo Kopo_files/ftp_config-89d827d86d1ff15eecee4487183343eba7f35a19109865a1c2953a3ccab09594.png" alt="Ftp config">
+  <br>
+  <h4 class="PushTop_20">Using Kopo Kopo's FTP server</h4>
+
+  <p>
+    In order to use K2's FTP server, select the “Use our FTP server” option. This is the default selected option and it
+    means K2 will create an FTP account for your enterprise at ftp.kopokopo.com. The generated CSV files containing your
+    mobile money transactions will be sent to the said FTP account.
+  </p>
+
+  <p>
+    The FTP server settings are disabled because K2 automatically generates them. All the enterprise needs to do is select
+    the "FTP Push Interval" of their choice. This represents the frequency at which K2 will generate and push a CSV file
+    to your FTP account. For example, if you select  "1 Hour" as the FTP push interval, K2 will generate a CSV file
+    containing your mobile money transactions for the past hour. It will then immediately push this CSV file to your FTP
+    account. This will be a repetitive action occurring every hour (according to this example).
+  </p>
+
+  <p>
+    Once you select the FTP Push Interval of your choice, click on “Save”. This will send a request to K2 to create your
+    FTP account at ftp.kopokopo.com. You will be notified via email once your account is ready at which point K2 will
+    start pushing transactions to your FTP account.
+  </p>
+
+  <h4>Using your own FTP server</h4>
+
+  <p>
+    In order to use your own FTP server, select the “Use your own FTP server” option. Fill in all the fields with your
+    FTP server's parameters.
+  </p>
+
+  <p>
+    The last parameter is the “FTP Push interval” which represents the frequency at which K2 will generate and push a
+    CSV file to the designated FTP server. For example, if you select  “1 Hour” as the FTP push interval then K2 will
+    generate a CSV file containing your mobile money transactions for the past hour. It will then immediately push this
+    CSV file to the designated server using the login parameters provided. This will be a repetitive action occurring
+    every hour (according to this example).
+  </p>
+
+
+  <h3>CSV File Format</h3>
+
+  <p>The CSV file is Unicode (UTF-8) encoded and contains the following fields:</p>
+
+
+
+  <table class="table table-bordered ApiTable">
+    <tbody><tr>
+      <th scope="col">Parameter</th>
+      <th scope="col">Remarks</th>
+      <th scope="col">Example</th>
+    </tr>
+    <tr>
+      <td>k2_account_id</td>
+      <td>The Account Id within the K2 system</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>k2_transaction_id</td>
+      <td>The K2 assigned transaction id</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>mm_system_id</td>
+      <td>The Mobile Money System id</td>
+      <td>M-PESA</td>
+    </tr>
+    <tr>
+      <td>mp_transaction_id</td>
+      <td>The transaction is assigned to this transaction by the Mobile Payment System</td>
+      <td>54445</td>
+    </tr>
+    <tr>
+      <td>biller_number</td>
+      <td>The Paybill phone number of the biller</td>
+      <td>888555</td>
+    </tr>
+    <tr>
+      <td>transaction_date</td>
+      <td>The Date of the transaction</td>
+      <td>26/4/11</td>
+    </tr>
+    <tr>
+      <td>transaction_time</td>
+      <td>The transaction time</td>
+      <td>1:03 PM</td>
+    </tr>
+    <tr>
+      <td>transaction_type</td>
+      <td>The type of transaction</td>
+      <td>Paybill</td>
+    </tr>
+    <tr>
+      <td>ac_no</td>
+      <td>The account number of the subscriber within the enterprise MIS. This field will be blank if it is a Buygoods transaction</td>
+      <td>A123333</td>
+    </tr>
+    <tr>
+      <td>sender</td>
+      <td>The phone number of the sender</td>
+      <td>0723456789</td>
+    </tr>
+    <tr>
+      <td>first_name</td>
+      <td>The sender's first name</td>
+      <td>John</td>
+    </tr>
+    <tr>
+      <td>last_name</td>
+      <td>The sender's last name</td>
+      <td>Doe</td>
+    </tr>
+    <tr>
+      <td>middle_name</td>
+      <td>The sender's middle name</td>
+      <td>K.</td>
+    </tr>
+    <tr>
+      <td>amount</td>
+      <td>The transaction amount</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>currency</td>
+      <td>The currency</td>
+      <td>KES</td>
+    </tr>
+  </tbody></table>
+</div>
+  </div>
+
+</div>
+
+<script>
+  $('document').ready(function () {
+    $("#ftpv1").show();
+  });
+
+
+  $(function () {
+    $('.dropdown-menu li a').click(function () {
+      $('.DropDown_apiButton').text($(this).text());
+      //alert( $(this).text().toString().trim() );
+      var version = $(this).text().toString().trim()
+      if( version == "Version 1.0" ){
+        $("#ftppv1").show();
+      }
+    });
+  });
+</script>
+  </div>
+
+
+</div>
+
+<!-- This adds an active class to the cureent active tab        -->
+<script>
+
+  $('document').ready(function () {
+    $("#http_doc").show();
+    $("#xml_doc").hide();
+    $("#ftp_doc").hide();
+   });
+
+
+
+  $(function () {
+    $('.accordion').on('show', function (e) {
+      $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('highlighted');
+      var the_label = $(e.target).prev('.accordion-heading').find('.accordion-toggle').html().toString().trim();
+      if(the_label == "HTTP(S) POST"){
+        //alert("HTTP POST clicked");
+        $("#http_doc").show();
+        $("#xml_doc").hide();
+        $("#ftp_doc").hide();
+      }else if(the_label == "XML over HTTP(S)"){
+        $("#xml_doc").show();
+        $("#http_doc").hide();
+        $("#ftp_doc").hide();
+      }else if(the_label == "FTP"){
+        $("#ftp_doc").show();
+        $("#http_doc").hide();
+        $("#xml_doc").hide();
+        //alert("FTP clicked");
+      }
+      //alert( $(this).find('.accordion-toggle').html().toString().trim());
+      //$(this).find('.accordion-toggle').html()
+    });
+    $('.accordion').on('hide', function (e) {
+      $(this).find('.accordion-toggle').not($(e.target)).removeClass('highlighted');
+    });
+
+  });
+</script>
+
+  <div class="push"></div>
+</div><webengagedata><style type="text/css">#webklipper-publisher-widget-container, #webklipper-publisher-widget-container * {overflow:visible; -webkit-box-sizing: content-box; -moz-box-sizing: content-box;  box-sizing: content-box; margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}</style><div id="webklipper-publisher-widget-container"><iframe name="webengage-engagement-callback-frame" id="webengage-engagement-callback-frame" frameborder="0" marginheight="0" marginwidth="0" style="position: absolute; background-color: transparent; bottom: 0px; right: 0px; border: none; overflow: hidden; visibility: hidden; display: none;" src="./Kopo Kopo_files/saved_resource.html"></iframe><script type="text/javascript" charset="UTF-8" async="" src="./Kopo Kopo_files/v4.js"></script></div></webengagedata>
+
+<!-- end content -->
+
+
+<div class="FooterContainer">
+  <div class="Footer">
+    <a href="https://app.kopokopo.com/privacy">Privacy policy</a> | <a href="https://app.kopokopo.com/tos"> Terms of service</a>
+    | <a href="https://app.kopokopo.com/msa">Merchant service agreement</a>
+    | <a href="https://app.kopokopo.com/contact_us">Contact us</a>
+    <br>
+    © Copyright 2018 Kopo Kopo, Inc.
+  </div>
+  <!-- end #footer and #bokeh -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    // Track user is they have logged in
+        ga('create', 'UA-24071952-9', { 'userId': '21119' });
+        ga('set', 'dimension1', '21119'); // Using a custom dimension
+    ga('send', 'pageview');
+</script>
+
+</div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    // Track user is they have logged in
+        ga('create', 'UA-24071952-9', { 'userId': '21119' });
+        ga('set', 'dimension1', '21119'); // Using a custom dimension
+    ga('send', 'pageview');
+</script>
+
+<script language="javascript">
+    $('#CashAdvance_tab').click(function(){
+        waitDialog.showPleaseWait();
+        $("#wait_dialog_text").html("<h3>One moment please...</h3>")
+    });
+</script>
+
+
+</body></html>

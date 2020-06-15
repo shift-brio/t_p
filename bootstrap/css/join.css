@@ -1,0 +1,293 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;		
+	background: linear-gradient(to bottom, #fff, lightgrey);	
+}
+.toast-container{
+	margin: 3px !important;
+}
+.toast{
+	border-radius: 5px !important;
+	padding: 5px !important;
+	height: auto !important;
+	min-height: auto !important;
+	min-width: 50px;	
+	font-weight: 500;	
+	text-align: left !important;
+	font-size: .9em !important;
+	background: linear-gradient(to bottom,#000 ,#000) !important;
+	animation: black_hole .25s !important;
+}
+@media only screen and (max-width: 800px){
+	.toast{
+		margin-bottom: 5px !important;
+		width: 98% !important;
+		margin-left: 1% !important;
+		margin-right: 1% !important;
+	}
+}
+.toast::before{
+	background: #00ff00;
+	width: 5px;
+	height: 5px;
+	margin-right: 5px;
+	border-radius: 100%;
+}	
+.toast.error{
+	color: red !important;
+}
+.toast.warning{
+	color: orange !important;
+}
+.talk-nav{
+	height: 50px !important;
+	background: #cb0000 !important;
+	box-shadow: none;
+	display: inline-flex;	
+	margin-top: 0px;
+	transition: margin-top .25s;
+	margin-bottom: 0px !important;	
+}
+.talk-nav-left{
+	height: 100%;
+	max-width:150px ;
+	padding: 5px;		
+}
+.talk-logo{
+	height: 41px;;
+	width: auto;
+}
+.talk-nav-right{
+	height: 100%;
+	width: auto;
+	padding: 8px;
+}
+.talk-nav-cols{
+	margin-top: -10px;
+	margin-left: 10px;
+	width: auto !important;
+	padding: 3px;	
+	overflow-y: hidden;	
+	overflow-x: auto;
+}
+.talk-tab{
+	font-weight: 600;
+	font-size: 1em;
+	border:1px solid transparent;
+	padding: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	color:#f2f2f2;
+	transition: background .3s,color .25s,margin-left .25s;
+}
+.talk-tab.active{
+	background: #000;
+	color: #0000ff9c;
+}
+.talk-tab.active::before{
+	content: "";
+	display: inline-flex;
+	height: 5px;
+	width: 5px;
+	border-radius: 100%;
+	/* background: #00ff00; */
+	background: #f2f2f2;
+	margin-right: 5px;
+	margin-top: -5px;
+}
+.talk-tab:hover{
+	background: grey;
+	color: #fff;
+	border:1px solid grey;
+}	
+.loader{
+	width: 100%;
+	height: 50px;
+	position: absolute;			
+	z-index: 1080;	
+	display: none;	
+}
+.loader-indic{
+	width: 0%;
+	height: 100%;
+	z-index: 10;
+	background: linear-gradient(to right, grey, #fff);
+	opacity: .7;		
+}
+@keyframes progress_infin{
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+.cancel-load{
+	color: #fff;
+	font-weight: 600;
+	background: grey !important;
+	border-radius: 100%;
+	border:none;
+	border:2px solid grey;
+	height: 32px;
+	width: 32px;
+	right: 0;
+	margin-top: -41px;
+	margin-right: 12px;
+	padding: 2px;
+	position: absolute;
+	outline: 0px transparent !important;
+	transition: background .3s ease-in,transform .1s;
+}
+.cancel-load:hover{
+	background: grey !important;
+}
+.cancel-load:focus{
+	transform: scale3d(.85,.85,.85);	
+	background: #cb0000 !important;	
+}	
+.sign-body{
+	width:100%;
+	height: 100%;
+	position: fixed;
+	padding-bottom: 50px !important;		
+	background: linear-gradient(to bottom, #fff, lightgrey);	
+}
+.sign-cont{
+	border:2px solid #f2f2f2;
+	margin-top: 20px;
+	height: auto !important;
+	border-radius: 5px;
+	overflow-y: auto;
+	padding-top: 10px !important;
+	padding-bottom: 50px !important;
+	box-shadow: 0 0 8px 0px white;
+	background: #f2f2f2;
+}
+@media only screen and (max-width: 800px){
+	.sign-cont{
+		margin-top: 5px !important;			
+		margin-bottom: 30px !important;
+	}
+	.sign-body > .row{
+		padding: 5px !important;						
+	}
+}
+.sign-body > .row{
+	overflow-y: auto;
+	padding-bottom: 150px !important;
+	height: 100% !important;		
+}
+.talk-back{
+	position: fixed;
+	right: 0;	
+	height: 50px;		
+}	
+.sign-leave{
+	border-radius: 100%;
+	width: 40px;
+	height: 40px;
+	padding: 4px;
+	margin-right: 5px;
+	border:0px solid #000;
+	background: transparent;
+	transition: background .25s, transform .1s, border .15s;
+}
+.sign-leave:active,.sign-leave:focus{
+	background: #fff !important;
+	color: #000;
+	border:2px solid #ffff;
+	transform: scale3d(.9,.9,.9);
+}
+.sign-tag{
+	text-decoration: none;
+	font-weight: 600;
+	margin-top: -3px;
+	font-size: 1.2em;
+	font-family: Article Title, serif;
+	padding-right: 10px !important;
+}
+@media only screen and (min-width: 800px){
+	.talk-back{
+		margin-top: -8px !important;	
+		height: 30px !important;		
+	}
+	.sign-cont{			
+		height: 500px;
+	}
+}
+.sign-label{
+	font-weight: 600;
+	color: grey;
+	font-size: 1.1em;
+}
+.sign-in, .sign-sel{
+	width: 100%;
+	border: 2px solid grey !important;
+	outline: 0 !important;
+	background: grey;
+	margin-top: 3px;
+	cursor: pointer;
+	color: lightgrey;
+	border-radius: 8px;
+	padding-left: 5px;
+	height: 34px;
+	font-weight: 500;
+	transition: color .25s, background .25s;
+}
+.sign-in.er-in{
+	background-color: grey !important;
+	background-repeat: no-repeat !important;
+	background-position: right;		
+	background-image: url(../../uploads/system/e.svg) !important;	
+}
+.sign-in.er-in:focus{
+	background-color: #fafafa !important;
+	background-repeat: no-repeat !important;
+	background-position: right;		
+	background-image: url(../../uploads/system/e.svg) !important;	
+	color: #000;
+}
+
+.pass-match{
+	background-color: grey !important;
+	background-repeat: no-repeat !important;
+	background-position: right !important;		
+	background-image: url(../../uploads/system/okay.svg) !important;	
+}
+.pass-match:focus{
+	background-color: #fafafa !important;
+	background-repeat: no-repeat !important;
+	background-position: right !important;		
+	background-image: url(../../uploads/system/okay.svg) !important;	
+	color: #000;
+}
+.sign-in:focus,.sign-sel:focus{
+	background: #fafafa;
+	color: #000;
+}
+.sign-group{
+	margin-bottom: 5px;
+}
+.check_p > label::after{
+	border-radius: 20px !important;
+}
+.submit-sign{
+	border-radius: 8px;
+	border:0px solid #000;
+	padding: 8px;
+	box-shadow: 0 0 2px 0px black;
+	font-weight: 600;
+	font-family: Article Title, serif;
+	font-size: 1.2em;
+	background: linear-gradient(to bottom, darkgrey, grey);
+	color: #fafafa;
+	transition: background .25s, color .25s , transform .1s;
+}
+.submit-sign:active{
+	transform: scale3d(.95,.95,.95);
+	background: #000;
+	color: #fff;
+	border:2px solid #000;
+}
