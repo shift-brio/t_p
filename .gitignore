@@ -1,10 +1,10 @@
 .DS_Store
 
-application/cache/*
+/application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess
 
-application/logs/*
+/application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 
@@ -31,16 +31,16 @@ user_guide_src/cilexer/pycilexer.egg-info/*
  ##app specific .gitignore 
 
 .wellknown/
-application/config
-application/core
-application/helpers
-application/hooks
-application/language
-application/logs
-application/models
-application/views/components/dumped.php
-extras/
-uploads/
+/application/config
+/application/core
+/application/helpers
+/application/hooks
+/application/language
+/application/logs
+/application/models
+/application/views/components/dumped.php
+/extras/
+/uploads/
 .gitignore
 *.sql
 *.zip
