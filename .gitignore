@@ -1,3 +1,4 @@
 uploads/*
-application/config/
-application/models/
+application/config/*
+.gitignore
+application/models/*
