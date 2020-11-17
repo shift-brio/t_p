@@ -1,6 +1,0 @@
-talkpointonlinedatabase||47dbf460cb50faf353834ac69e1ebe6d@Tp
-VCFQD-V9FX9-46WVH-K3CD4-4J3JM
-Serial Number: CNU2331T7N
-sudo /opt/lampp/lampp start
- /opt/android-studio/bin/studio.sh /usr/local/bin/android-studio
-
